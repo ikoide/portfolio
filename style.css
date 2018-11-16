@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(to bottom, lightseagreen, lightcoral 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightsalmon;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid lightcoral;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: lightseagreen;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightcoral;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.showcase {
+  margin-top: 70px;
+  text-align: center;
+  color: lightsalmon;
+}
+.section1 {
+  color: lightsalmon;
+  margin-top: 70px;
+  margin-left: 16%;
+  float: left;
+}
+.section2 {
+  color: lightsalmon;
+  margin-top: 70px;
+  margin-right: 16%;
+  float: right;
+}
+
