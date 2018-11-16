@@ -16,7 +16,6 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  border: 1px solid coral;
 }
 
 li {
@@ -25,7 +24,7 @@ li {
 
 li a {
   display: block;
-  color: lightseagreen;
+  color: coral;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
