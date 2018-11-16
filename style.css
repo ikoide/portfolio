@@ -3,7 +3,7 @@ html, body {
   height: 100%;
 }
 body {
-  background-image: linear-gradient(to bottom, lightseagreen, black 100%);
+  background-image: linear-gradient(to bottom, lightseagreen, grey 100%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -16,7 +16,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  border: 1px solid lightcoral;
+  border: 1px solid coral;
 }
 
 li {
@@ -32,7 +32,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: lightcoral;
+  background-color: coral;
 }
 
 .active {
@@ -41,7 +41,7 @@ li a:hover:not(.active) {
 .showcase {
   margin-top: 70px;
   text-align: center;
-  color: lightcoral;
+  color: coral;
 }
 .section1 {
   color: black;
