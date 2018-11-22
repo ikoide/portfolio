@@ -33,7 +33,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #fc9905;
 }
 .showcase {
   margin-top: 70px;
