@@ -52,14 +52,3 @@ li a:hover:not(.active) {
   margin-right: 16%;
   float: right;
 }
-a:link {
-    color: coral;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: seagreen;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
