@@ -1,1 +1,72 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel= "stylesheet" href= "style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <title>Ian Koide</title>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+            </div>
+        </header>
+        <div name= "about" id= "about">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur pharetra urna non consequat.<br>
+            Donec tincidunt at elit sed sollicitudin. Suspendisse vel nisl diam. Aliquam a sem et velit ultrices mattis.<br>
+            Nulla non tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <hr style= "border: 0;width: 35%; color: black; background-color: black; height: 2px;">
+            <img class= "image1" src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fripndipstickers.com%2Fassets%2Fswinging-nerm.gif&f=1">
+            <hr style= "border: 0;width: 100%; color: #990033; background-color: #990033; height: 30px;">
+        </div>
+        <div name= "experience" id= "experience">
+            <h1>Experience</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur pharetra urna non consequat.<br>
+            Donec tincidunt at elit sed sollicitudin. Suspendisse vel nisl diam. Aliquam a sem et velit ultrices mattis.<br>
+            Nulla non tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <hr style= "border: 0;width: 35%; color: black; background-color: black; height: 2px;">
+            <img class= "image2" src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.marcoetpolo.com%2Fsites%2Fdefault%2Ffiles%2FIcones%2FNouveau.png&f=1">
+        </div>
+        <div name= "skills" id= "skills">
+            <h1>Skills</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur pharetra urna non consequat.<br>
+            Donec tincidunt at elit sed sollicitudin. Suspendisse vel nisl diam. Aliquam a sem et velit ultrices mattis.<br>
+            Nulla non tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <hr style= "border: 0;width: 35%; color: black; background-color: black; height: 2px;">
+            <img class= "image3" src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fierdecoder.fr%2Fwp-content%2Fuploads%2F2014%2F03%2Fpython.png&f=1">
+            <hr style= "border: 0;width: 100%; color: #990033; background-color: #990033; height: 30px;">
+        </div>
+        <div name= "education" id= "education">
+            <h1>Education</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur pharetra urna non consequat.<br>
+            Donec tincidunt at elit sed sollicitudin. Suspendisse vel nisl diam. Aliquam a sem et velit ultrices mattis.<br>
+            Nulla non tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <hr style= "border: 0;width: 35%; color: black; background-color: black; height: 2px;">
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--<footer>
+            <p>By Ian Koide</p>
+        </footer>
+        -->
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
+</html>
