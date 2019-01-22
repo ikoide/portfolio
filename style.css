@@ -1,8 +1,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #f4f4f4;
-    color: #373737;
 }
 header {
 }
@@ -13,7 +11,9 @@ h1 {
 p {
     text-align: center;
 }
-
+li {
+    font-size: 22px;
+}
 #about {
     margin-top: 55px;
     background-color: #CCCC97;
@@ -21,7 +21,6 @@ p {
 }
 #experience {
     margin-top: 20px;
-    background-color: #f4f4f4;
 }
 
 .image1 {
@@ -31,16 +30,9 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-.image2 {
-    width: 325px;
-    height: 325px;
-}
-.image3 {
-    width: 275px;
-    height: 275px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+.image {
+    width: 210px;
+    height: 210px;
 }
 
 #navbar {
@@ -64,6 +56,9 @@ p {
 #navbar a:hover {
     background-color: #4d4d00;
     color: white;
+    border-bottom: 3px solid #990033;
+}
+#active {
     border-bottom: 3px solid #990033;
 }
 footer {
