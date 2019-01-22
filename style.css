@@ -1,6 +1,6 @@
-
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
 }
 header {
 }
@@ -21,6 +21,11 @@ li {
 }
 #skills {
     margin-top: 20px;
+    background-color: #f4f4f4;
+}
+#experience
+{
+    background-color: #CCCC97;
 }
 
 .image1 {
