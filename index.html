@@ -1,90 +1,76 @@
-
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link rel= "stylesheet" href= "style.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <title>Ian Koide</title>
     </head>
     <body>
         <header>
-            <div id="navbar">
+            <div id="navbar">   
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
             </div>
-        </header>
-        <div name= "about" id= "about">
-            <h1>About Me</h1>
-            <p>Ian Koide is an aspiring developer who started programming at the age of 11. 13 and<br>
-            proficient in multiple programming languages. Privacy enthusiast who also loves Linux. Currently<br>
-            attending Williamsburg Middleschool. Enjoys programming and microelectronic projects with Arduino's.</p>
-            <hr style= "border: 0;width: 35%; color: #373737; background-color: #373737; height: 2px;">
-            <img class= "image1" src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fbestanimations.com%2FAnimals%2FMammals%2FCats%2Fcats%2Fcute-kitty-animated-gif-26.gif&f=1">
-            <hr style= "border: 0;width: 100%; color: #990033; background-color: #990033; height: 30px;">
-        </div>
-        <div name= "skills" id= "skills">
-            <h1>Skills</h1>
-            <hr style= "border: 0;width: 35%; color: #373737; background-color: #373737; height: 2px;">
-                <div class= "row">
-                    <div class= "col-sm-4">
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-                    <div class= "col-sm-8">
-                        <img class="image" src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwebforpc.com%2Fwp-content%2Fuploads%2F2018%2F03%2Fc-plus-plus-program-logo-image.png&f=1">
-                        <img class="image" style="height:175px; width: 190px;" src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.w3.org%2Fhtml%2Flogo%2Fdownloads%2FHTML5_Badge_512.png&f=1">
-                        <img class="image" style="height:210px; width: 225px;"src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FLogos%2Fcss31600.png&f=1">
-                        <img class= "image" style= "height:220px; width: 220px;"src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fcornmanthe3rd%2Fplex%2F512%2FOther-python-icon.png&f=1">
-                        <img class="image" style= "height: 195px; width: 195px;" src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcamerinfolks.com%2Fimg%2Ficon-php1.png&f=1">
-                        <img class="image" style= "height:185px; width:185px;"src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fblogs.arcsoftwareconsultancy.com%2Fpi%2Ffiles%2F2013%2F03%2FPuTTY_icon_128px.png&f=1">
-                    </div>
-                </div>
-                <p style= "font-size: 20px; margin-top: 35px;">
-                I'm experience in multiple programming languages<br>
-                and can also work with Linux terminals and SSH.</p>    
-         </div>
-         <div class= "experience" id= "experience">
-            <h1>Experience</h1>
-            <hr style= "border: 0;width: 35%; color: #373737; background-color: #373737; height: 2px;">
-            <div class= "row">
-                <div class="col-sm-6">
-                    <p>Write experience shit here and<br>
-                    clean it up, just clean the whole site up.</p>
-                </div>
-                <div class="col-sm-6">
-                    <h2 style= "text-align: center;">Past Work</h2>
-                    <ul style= "text-align: center;">
-                        <li><a href= "opus.gq">Opus</a></li>
-                        <li>Void</li>
-                        <li>Void</li>
-                    </ul>
-                </div>
-            </div>
-         </div>
-        <!--<footer>
-            <p>By Ian Koide</p>
-        </footer>
-        -->
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("navbar").style.top = "0";
-                } else {
-                    document.getElementById("navbar").style.top = "-50px";
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        document.getElementById("navbar").style.top = "-50px";
+                    }
+                    prevScrollpos = currentScrollPos;
                 }
-                prevScrollpos = currentScrollPos;
-            }
-        </script>
+            </script>
+        </header>
+        <div id= "about" class= "container-fluid">
+            <h1>About Me</h1>
+            <hr>
+            <p>Hi, I'm Ian. I'm 13 years old and proficient in various programming languages.<br>
+            Soldering and amateur radio are two of my favorite hobbies. I currently attend<br>
+            Williamsburg Middleschool and will be attending TJHSST in the fall of 2019.</p>
+        </div>
+        <hr style= "height: 30px; width: 100%; color: #db9d32; background-color: #db9d32;">
+        <div id= "skills" class= "container-fluid">
+            <h1>Skills</h1>
+            <hr>
+            <div class= "row">
+                <div class= "col-md-4" style= "margin-top: 20px;">
+                    <p>Im familiar with multiple linux distro's<br>
+                    including Ubuntu and CentOs. I can build<br>
+                    websites in HTML, CSS and JavaScript.</p>
+                    <img src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2b%2FLogo-ubuntu_cof-white_orange-hex.svg%2F1024px-Logo-ubuntu_cof-white_orange-hex.svg.png&f=1" style= "width: 220px; height: 220px;">
+                </div>
+                <div class= "col-md-8" style= "margin-top: 20px;">
+                    <h4>Programming Languages</h4>
+                    <img id= "proim" src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F27%2FPHP-logo.svg%2F1200px-PHP-logo.svg.png&f=1";>
+                    <img id= "proim" src= "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwebforpc.com%2Fwp-content%2Fuploads%2F2018%2F03%2Fc-plus-plus-program-logo-image.png&f=1" style= "height: 180px; width: 180px;";>
+                    <img id= "proim" src= "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F10%2FPython_logo_icon-700x697.png&f=1";>
+                </div>
+            </div>
+        </div>
+        <hr style= "height: 30px; width: 100%; color: #db9d32; background-color: #db9d32;">
+        <div class= "container-fluid">
+            <h1>Experience</h1>
+            <hr>
+            <div class= "row">
+                <div class= "col-md-6" style= "margin-top: 20px;">
+                    <h3><a href= "https://opus.gq" target="_blank">Opus</a></p></h3>
+                </div>
+                <div class= "col-md-6" style= "margin-top: 20px;">
+                    <p>I've created multiple websites, the only one<br>
+                    currently running is Opus a login and registration<br>
+                    site that I've not done much on.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p><i>Ian Koide</i></p>
+            <p><a href= "https://github.com/LAnd0n271">Github</a></p>
+        </footer>
     </body>
 </html>
