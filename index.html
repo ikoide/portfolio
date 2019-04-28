@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "description" content= "Ian Koide's Portfolio">
+        <meta name= "keywords" content= "Ian Koide, Portfolio, Programming">
+        <meta name= "author" content= "Ian Koide">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <link href= "css-circular-prog-bar.css" rel="stylesheet">
+        <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin= "anonymous">
+        <link rel= "stylesheet" type= "text/css" href="styles/style.css">
+        <title>Ian Koide</title>
+    </head>
+    <body>
+        <header>
+            <div class= "container-fluid" id= "media">
+                <a href= "https://github.com/LAnd0n271"><img src= "img/GitHub-Mark-120px-plus.png" id= "github"></a>
+            </div>
+            <div class= "container-fluid" id= "info">
+                <h1 id= "name">Ian Koide</h1>
+                <h3 id= "title">Aspiring Programmer</h3>
+                <h4 id= "description">"In this world, a single blade can take you anywhere you want to go.<br> 
+                And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."</h4>
+            </div>
+        </header>
+        <main>
+            <div id="navbar">
+                <a href= "#experience">Experience</a>
+                <a href= "#skills">Skills</a>
+                <a href= "#portfolio">Portfolio</a>
+                <a href= "#contact">Contact</a>
+            </div>
+            <div class= "card" id= "about">
+
+            </div>
+            <div class= "card" id= "skills">
+                <div class= "icard">
+                    <div class= "row">
+                        <div class= "col-md-6">
+                            <h1>Skills</h1>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                            </ul>
+                            <h3>Other Skills</h3>
+                            <ul>
+                                <li>JS</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class= "col-md-6">
+                            <img src= "img/python.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class= "card" id= "portfolio">
+                <div class= "icard">
+                    <h1>Portfolio</h1>
+                    <p>Portfolio has yet to be filled!</p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+    }
+</script>
