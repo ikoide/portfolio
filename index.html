@@ -20,8 +20,8 @@
             <div class= "container-fluid" id= "info">
                 <h1 id= "name">Ian Koide</h1>
                 <h3 id= "title">Aspiring Programmer</h3>
-                <h4 id= "description">"In this world, a single blade can take you anywhere you want to go.<br> 
-                And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."</h4>
+                <h4 id= "description"><i>"In this world, a single blade can take you anywhere you want to go.<br> 
+                And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."</i></h4>
             </div>
         </header>
         <main>
@@ -32,7 +32,11 @@
                 <a href= "#contact">Contact</a>
             </div>
             <div class= "card" id= "about">
-
+                <div class= "icard">
+                    <h1>About Me</h1>
+                    <p>I'm just a kid looking to add some more work to his portfolio. I'm experienced in HTML, CSS, Python and C++. My favorite hobbies are soldering, amateur radio and programming!<br>
+                    I'm getting started with machine learning in python and excited to learn more!</p>
+                </div>
             </div>
             <div class= "card" id= "skills">
                 <div class= "icard">
@@ -68,23 +72,34 @@
             </div>
             <div class= "card" id= "contact">
                 <div class= "icard">
-                    <form name="contact" netlify>
-                        <p>
-                            <label>Name <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                            <label>Email <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
-                    </form>
-                    </form>
+                    <div class= "row">
+                        <div class= "col-md-6">
+                            <h1>Contact Me</h1>
+                            <img src= "img/mail.png" id= "mail">
+                        </div>
+                        <div class= "col-md-6">
+                            <form name="contact" netlify>
+                                <p>
+                                    <label>Name <input type="text" name="name" /></label>
+                                </p>
+                                <p>
+                                    <label>Topic <input type="text" name="topic" /></label>
+                                </p>
+                                <p>
+                                    <label>Email <input type="email" name="email" /></label>
+                                </p>
+                                <p>
+                                    <button type="submit">Send</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
         <footer>
-
+            <p>Ian Koide</p>
+            <p>iankoide@protonmail.com</p>
         </footer>
     </body>
 </html>
