@@ -82,7 +82,7 @@ body {
 }
 #skills img {
   float: right;
-  height: 750%;
+  height: 85%;
   width: 70%;
 }
 #portfolio {
@@ -92,8 +92,8 @@ body {
   
 }
 #contact img {
-  height: 150px;
-  width: 150px;
+  height: 70%;
+  width: 40%;
 }
 footer {
   background-color: #087ea5;
