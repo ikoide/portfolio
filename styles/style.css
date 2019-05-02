@@ -88,6 +88,11 @@ body {
 #portfolio {
   margin-bottom: 50px;
 }
+#portfolio img {
+  height: 240px;
+  width: 190px;
+  margin-left: 15px;
+}
 #contact {
   
 }
