@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
 body {
-  background-color: #e5e5e5;
+  background-image: linear-gradient(#ffa69e, #f98075);
   font-family: 'Oswald', sans-serif;
+  min-height: 100%;
+  overflow: hidden;
 }
 #media {
     background-color: #087ea5;
@@ -11,97 +16,30 @@ body {
     width: 20px;
     height: 20px;
 }
-#info {
-    background-color: #ffa69e;
+#top {
     color: #E8DDCB;
-    padding-top: 80px;
     text-align: center;
-    padding-bottom: 80px;
+    min-height: 100%;
+    margin-top: 5%;
 }
-#info #name {
+#top #name {
     padding-bottom: 10px;
 }
-#info #title {
+#top #title {
     padding-bottom: 15px;
 }
-#info #description {
+#top #description {
     font-size: 15px;
 }
- /* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #ff686b;
-  z-index: 1;
+#arrow {
+  height: 45px;
+  width: 35px;
 }
-
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #E8DDCB;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+#work {
+  cursor: pointer;
 }
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.card {
-  margin: 0 auto;
-  width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-}
-.icard {
-  padding: 9px;
-}
-
-#about {
-  margin-top: 90px;
-  margin-bottom: 50px;
-}
-
-#skills {
-  background-color: #f4f4f4;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-#skills img {
-  float: right;
-  height: 85%;
-  width: 70%;
-}
-#portfolio {
-  margin-bottom: 50px;
-}
-#portfolio img {
-  height: 240px;
-  width: 190px;
-  margin-left: 15px;
-}
-#contact {
-  
-}
-#contact img {
-  height: 70%;
-  width: 40%;
-}
-footer {
-  background-color: #087ea5;
-  padding: 5px;
-  margin-top: 30px;
+#display {
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
 }
