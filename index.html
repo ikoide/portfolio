@@ -11,96 +11,41 @@
         <link rel= "stylesheet" type= "text/css" href="styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link rel="icon" type= "ico/png" href="https://image.flaticon.com/icons/svg/641/641980.svg">
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
         <title>Ian Koide</title>
     </head>
     <body>
         <header>
+        </header>
+        <main>
             <div class= "container-fluid" id= "media">
                 <a href= "https://github.com/ikoide"><img src= "img/GitHub-Mark-120px-plus.png" id= "github"></a>
             </div>
-            <div class= "container-fluid" id= "info">
+            <div class= "container-fluid" id= "top">
                 <h1 id= "name">Ian Koide</h1>
                 <h3 id= "title">Aspiring Programmer</h3>
                 <h4 id= "description"><i>"In this world, a single blade can take you anywhere you want to go.<br> 
                 And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."</i></h4>
-            </div>
-        </header>
-        <main>
-            <div id="navbar">
-                <a href= "#about">About</a>
-                <a href= "#skills">Skills</a>
-                <a href= "#portfolio">Portfolio</a>
-                <a href= "#contact">Contact</a>
-            </div>
-            <div class= "card" id= "about">
-                <div class= "icard">
-                    <h1>About Me</h1>
-                    <p>Ian Koide is an upcoming programmer who is proficient in multiple programming languages.<br>
-                    Ian has built multiple sites and using various programming languages.
-                    </p>
-                </div>
-            </div>
-            </div>
-            <div class= "card" id= "portfolio">
-                <div class= "icard">
-                    <h1>Portfolio</h1>
-                    <h3>Check out the project I'm currently working on here: <a href= "http://tempdom.website" target= "_blank">Current Project</a></h3>
-                    <a href= "http://mcvoyagewithin.com" target= "_blank"><img src= "img/voyagewithin.png"/></a>
-                    <a href= "#" target= "_blank"><img src= "img/cs.png"/></a>
-                    <a href= "#" target= "_blank"><img src= "img/cs.png"/></a>
-                    <a href= "#" target= "_blank"><img src= "img/cs.png"/></a>
-                    <a href= "#" target= "_blank"><img src= "img/cs.png"/></a>
-                </div>
-            </div>
-            <div class= "card" id= "contact">
-                <div class= "icard">
-                    <div class= "row">
-                        <div class= "col-md-6">
-                            <h1>Contact Me</h1>
-                            <img src= "img/mail.png" id= "mail">
-                        </div>
-                        <div class= "col-md-6">
-                            <form name="contact" netlify>
-                                <p>
-                                    <label>Name <input type="text" name="name" /></label>
-                                </p>
-                                <p>
-                                    <label>Topic <input type="text" name="topic" /></label>
-                                </p>
-                                <p>
-                                    <label>Email <input type="email" name="email" /></label>
-                                </p>
-                                <p>
-                                    <button type="submit">Send</button>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
+
+                <div id= "work">
+                    <img src= "img/arrow.png" id= "arrow">
                 </div>
             </div>
         </main>
-        <footer>
-            <p>Ian Koide</p>
-            <p>iankoide@protonmail.com</p>
-        </footer>
+        <script>
+
+            var slow = 1000;
+
+            function newPage() {
+                window.location.replace("work.html")
+            }
+
+            $( "#work" ).click(function() {
+                $( "html" ).fadeTo( slow, 0.5, newPage);
+            });
+
+        </script>
     </body>
 </html>
-<script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-    }
-</script>
