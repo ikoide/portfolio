@@ -90,8 +90,27 @@
             </div>
         </main>
         <footer>
-            <br>
-            <h2>K O I D E</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="container-fluid" style="margin-top: 40px;">
+                        <h2>K O I D E</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container-fluid" style="margin-top: 25px;">
+                        <div class="btcwdgt-price" bw-cur="usd"></div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
+    <script>
+        (function(b,i,t,C,O,I,N) {
+            window.addEventListener('load',function() {
+            if(b.getElementById(C))return;
+            I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+            I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+            },false)
+        })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+    </script>
 </html>
