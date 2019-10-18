@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name= "description" content= "Ian Koide's Portfolio">
@@ -9,7 +9,7 @@
         
         <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin= "anonymous">
         <link rel= "stylesheet" type= "text/css" href="styles/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
         <link rel="icon" type= "ico/png" href="https://image.flaticon.com/icons/svg/641/641980.svg">
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -20,32 +20,46 @@
         <header>
         </header>
         <main>
-            <div class= "container-fluid" id= "media">
-                <a href= "https://github.com/ikoide"><img src= "img/GitHub-Mark-120px-plus.png" id= "github"></a>
-            </div>
-            <div class= "container-fluid" id= "top">
+            <div class= "container-fluid" id="top">
                 <h1 id= "name">Ian Koide</h1>
                 <h3 id= "title">Aspiring Programmer</h3>
                 <h4 id= "description"><i>"In this world, a single blade can take you anywhere you want to go.<br> 
                 And even though it’s a virtual world, I feel more alive in here than I ever did in the real world."</i></h4>
-
-                <div id= "work">
-                    <img src= "img/arrow.png" id= "arrow">
+            </div>
+            <div class="container-fluid" id="mid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container item">
+                            <img src="img/project-i.png">
+                            <a href="http://173.73.147.240" target="_blank"><h1>Project i</h1></a>
+                            <p>09/29/19</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container item">
+                            <img src="img/README_image.png">
+                            <a href="https://github.com/ikoide/pong-scienceproject" target="_blank"><h1>Pong Science Project</h1></a>
+                            <p>08/09/19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container item">
+                            <img src="img/heiki.png">
+                            <a href="#" target="_blank"><h1>Heiki Network</h1></a>
+                            <p>09/17/19</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container item">
+                            <img src="img/mvw.png">
+                            <a href="http://mcvoyagewithin.com/" target="_blank"><h1>The Voyage Within</h1></a>
+                            <p>02/11/19</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
-        <script>
-
-            var slow = 1000;
-
-            function newPage() {
-                window.location.replace("work.html")
-            }
-
-            $( "#work" ).click(function() {
-                $( "html" ).fadeTo( slow, 0.5, newPage);
-            });
-
-        </script>
     </body>
 </html>
