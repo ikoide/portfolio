@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name= "description" content= "Ian Koide's Portfolio">
-        <meta name= "keywords" content= "Ian Koide, Portfolio, Programming">
-        <meta name= "author" content= "Ian Koide">
-        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
-        
-        <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin= "anonymous">
-        <link rel= "stylesheet" type= "text/css" href="styles/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
-        <link rel="icon" type= "ico/png" href="https://image.flaticon.com/icons/svg/641/641980.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" text="text/css" href="static/main.css">
 
         <title>Ian Koide</title>
     </head>
     <body>
         <header>
+            <div class="top container-fluid">
+                <h1>Hello, I'm <span style="color: #f48404;"><b>Ian Koide</b></span>.</h1>
+                <h1>I'm a Student.</h1>
+                <p><i>"Never trust anyone too much, remember the devil was once an angel."</i></p>
+                <hr>
+                <button onclick="parent.location='#projects'">View My Work</button>
+            </div>
+            <div id="navbar">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <hr id="navhr">
         </header>
         <main>
-            <div class= "container-fluid" id="top">
-                <h1 id= "name">Ian Koide</h1>
-                <h3 id= "title">Aspiring Programmer</h3>
-                <h4 id= "description"><i>"Never trust anyone too much, remember the devil was once an angel."</i></h4>
-            </div>
-            <div class="container-fluid" id="mid">
+            <div class="about1" id="about">
+                <h1>About</h1>
+                <hr>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="container item">
-                            <img src="img/project-i.png">
-                            <a href="http://173.73.147.240" target="_blank"><h1>Project i</h1></a>
-                            <p>09/29/19</p>
-                        </div>
+                        <img src="static/server.svg">
+                        <h4>System Admin</h4>
                     </div>
                     <div class="col-md-6">
-                        <div class="container item">
-                            <img src="img/README_image.png">
-                            <a href="https://github.com/ikoide/pong-scienceproject" target="_blank"><h1>Pong Science Project</h1></a>
-                            <p>08/09/19</p>
+                        <img src="static/linux.svg">
+                        <h4>Multiple Linux Distros</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-md-4">
+                        <img style="height: 9rem;" src="static/tech1.png">
+                    </div>
+                    <div class="col-md-4">
+                        <img style="height: 9rem;" src="static/tech2.png">
+                    </div>
+                    <div class="col-md-4">
+                        <img style="height: 9rem;" src="static/tech3.png">
+                    </div>
+                </div>
+            </div>
+            <div class="projects" id="projects">
+                <h1>Projects</h1>
+                <hr>
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="static/project-i.png">
+                        </div>
+                        <div class="col-md-5 project-text">
+                            <h2>Project i</h2>
+                            <p style="color: #f48404;">Python, Flask, SQL, HTML, CSS</p>
+                            <p>Project i is an upcoming decentralized social media platform that focuses on anoniminity and freedom of speech. Project i will be run on a peer-to-peer network were users can help host the sites content aswell as their own. A central server will provide initial data for the nodes until we can fully sustain decentralization.</p>
+                            <h5><a href="https://github.com/project-eye" target="_blank">Github</a></h5>
+                            <h5><a href="http://project-i.tk" target="_blank">Site</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="static/pong.png">
+                        </div>
+                        <div class="col-md-5 project-text">
+                            <h2>Pong Bot Algorithms</h2>
+                            <p style="color: #f48404;">Python, Pygame</p>
+                            <p>Python simulation writen using the python library Pygame. Made for simulation and testing of different pong bot algorithms while displaying useful stats and information.</p>
+                            <h5><a href="https://github.com/ikoide/pong-scienceproject" target="_blank">Github</a></h5>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="container item">
-                            <img src="img/heiki.png">
-                            <a href="#" target="_blank"><h1>Heiki Network</h1></a>
-                            <p>09/17/19</p>
+                        <div class="project">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img style="height: 7.5rem; width: 14rem; border-radius: 0.2rem;" src="static/heiki.png">
+                                </div>
+                                <div class="col-md-5 project-text">
+                                    <h2>Heiki Network</h2>
+                                    <p style="color: #f48404;">Python, FLask, HTML, CSS</p>
+                                    <p>Full-Stack site for minecraft server network with login and registration system.</p>
+                                    <h5><a href="https://github.com/ikoide/" target="_blank">Github</a></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="container item">
-                            <img src="img/mvw.png">
-                            <a href="http://mcvoyagewithin.com/" target="_blank"><h1>The Voyage Within</h1></a>
-                            <p>02/11/19</p>
+                        <div class="project">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <img style="height: 7.5rem; width: 14rem; border-radius: 0.2rem;" src="static/mvw.png">
+                                </div>
+                                <div class="col-md-5 project-text">
+                                    <h2>Voyage Within</h2>
+                                    <p style="color: #f48404;">HTML, CSS</p>
+                                    <p>Information website for minecraft network.</p>
+                                    <h5><a href="http://mcvoyagewithin.com" target="_blank">Site</a></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
