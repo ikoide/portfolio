@@ -107,3 +107,38 @@ html, body {
 .project-text a {
     color: #3765ef;
 }
+.contact {
+    padding: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact hr {
+    width: 7.5%;
+    height: 0.15rem;
+    background-color: #f48404;
+}
+.contact h1 {
+    color: #1a1a1e;
+    font-weight: bold;
+}
+.contact button {
+    color: #3765ef;
+    border: 0.1rem solid #3765ef;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 0.25rem;
+    background-color: rgb(0,0,0,0);
+}
+.contact button:hover {
+    color: #f48404;
+}
+.footer {
+    padding: 1rem;
+    background-color: #fcfcfc;
+}
+.footer img {
+    height: 2.5rem;
+}
+.footer h1 {
+    color: #1d2333;
+}
