@@ -9,7 +9,7 @@ html, body {
     height: 100vh;
     padding-top: 35vh;
     text-align: center;
-    background-color: #1d2333;
+    background-image: linear-gradient(#1d2333, #151926);
     color: #e5e5e5;
 }
 
