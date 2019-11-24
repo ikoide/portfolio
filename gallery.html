@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" text="text/css" href="static/gallery.css">
+
+        <title>Ian Koide</title>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <div class="gallery">
+                <h1>Gallery</h1>
+                <hr>
+                <img class="mySlides" src="static/project-i2.png">
+                <img class="mySlides" src="static/g1.png">
+                <img class="mySlides" src="static/g2.png">
+                <img class="mySlides" src="static/g3.png">
+                <img class="mySlides" src="static/pong.png">
+                <img class="mySlides" src="static/mvw.png">
+            </div>
+            <div class="footer">
+                <h1>I A N K O I D E</h1>
+                <small>© Ian Koide 2019, All Rights Reserved</small>
+            </div>
+        </main>
+    </body>
+    <script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 6500); // Change image every 2 seconds
+}
+    </script>
+</html>
