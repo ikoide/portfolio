@@ -24,6 +24,15 @@ html, body {
     background-color: #1a1a1e;
 }
 
+.hover-black {
+    color: #f48404;
+    transition-duration: 600ms;
+}
+
+.hover-black:hover {
+    color: #1a1a1e;
+}
+
 .top button {
     color: #e5e5e5;
     border: 0.1rem solid #e5e5e5;
