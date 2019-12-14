@@ -18,48 +18,62 @@
                 <hr>
                 <a href="#projects"><button>View My Work</button></a>
             </div>
-            <div id="navbar">
-                <a href="#top">Home</a>
-                <a href="#about">Skills</a>
-                <a href="#projects">Portfolio</a>
-                <a href="#contact">Contact</a>
-                <a href="http://github.com/ikoide" target="_blank" style="float: right;"><img src="static/github.png" style="height: 1.5rem;"></a>
-                <a href="http://project-i.tk" target="_blank" style="float: right;"><img src="static/logo_256x.png" style="height: 1.5rem;"></a>
-                <a href="https://discord.gg/MPYQrsw" target="_blank" style="float: right;"><img src="static/mc.png" style="height: 1.5rem;"></a>
-                <hr id="navhr">
-            </div>
+            <nav class="navbar navbar-expand-md navbar-dark bg-nav">
+                <div class="container">
+                    <a class="navbar-brand mr-4" href="/">Ian Koide</a>
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="#about">About</a>
+                        <a class="nav-item nav-link" href="{{ url_for('movies') }}">Skills</a>
+                        <a class="nav-item nav-link" href="{{ url_for('dashboard') }}">Portfolio</a>
+                        <a class="nav-item nav-link" href="{{ url_for('withdraw') }}">Contact</a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="https://github.com/ikoide" target="_blank"><img src="static/github.png" style="height: 1.25rem;"></a>
+                        <a class="nav-item nav-link" href="https://discord.gg/4zHwD8R" target="_blank"><img src="static/mc.png" style="height: 1.25rem;"></a>
+                        <a class="nav-item nav-link" href="http://project-i.tk" target="_blank"><img src="static/logo_1024x.png" style="height: 1.25rem;"></a>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
-            <div class="about1" id="about">
+            <div class="content-section" id="about" style="background-color: #fcfcfc; padding-bottom: 3rem; padding-top: 2rem; margin-top: -0.01rem;">
+                <h1>About</h1>
+                <p>Me</p>
+                <hr>
+                <p style="width: 90%; margin-left: auto; margin-right: auto; display: block;">Ian Koide is currently a student at Yorktown Highschool, Ian possess experience in a multitude of programming languages and technologies, he is fueled by his passion to learn and enthusiasm in the computer science and numerous related fields. Some recent projects Ian has worked on include, various full-stack web applications and simulations built using the popular programming language Python.</p>
+            </div>
+            <div class="content-section" id="skills">
                 <h1>Skills</h1>
+                <p>Things I'm decent at.</p>
                 <hr>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="static/server.svg">
-                        <h4>System Admin</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Python</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Flask</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">System Admin</div>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="static/linux.svg">
-                        <h4>Multiple Linux Distros</h4>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 40px;">
-                    <div class="col-md-4">
-                        <img style="height: 9rem;" src="static/tech1.png">
-                        <h4>Bootstrap</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <img style="height: 9rem;" src="static/tech2.png">
-                        <h4>Python</h4>
-                    </div>
-                    <div class="col-md-4">
-                        <img style="height: 9rem;" src="static/flask.png">
-                        <h4>Flask</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="projects" id="projects">
                 <h1>Projects</h1>
+                <p>Recent and ongoing work.</p>
                 <hr>
                 <div class="project">
                     <div class="row">
@@ -97,9 +111,9 @@
                         </div>
                         <div class="col-md-5 project-text">
                             <h2>Polarscape Network</h2>
-                            <p>11/11/19</p>
+                            <p>10/11/19</p>
                             <p style="color: #f48404;">Python, Flask, HTML, CSS</p>
-                            <p>Website for Minecraft network built in Python Flask.</p>
+                            <p>Template website for a Minecraft server built using the Python framework Flask.</p>
                             <h5><a href="http://polarscape.org" target="_blank">Site</a></h5>
                         </div>
                     </div>
@@ -120,55 +134,36 @@
             </div>
             <div class="footer">
                 <h1>I A N K O I D E</h1>
+                <small>All sites on my portfolio are self-hosted by Ian Koide.</small><br>
                 <small>© Ian Koide 2019, All Rights Reserved</small>
             </div>
         </main>
-
     </body>
-    <script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    } 
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
     $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1000, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 1000, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
     });
-    </script>
+</script>
 </html>
