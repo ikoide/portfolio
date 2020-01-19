@@ -118,6 +118,8 @@ html, body {
     background-color: #1a1a1e;
 }
 .projects img {
+    border: 1px solid black;
+
     width: 70%;
     max-width: 100%;
     height: 40vh;
