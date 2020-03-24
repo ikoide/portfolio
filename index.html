@@ -1,179 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Work+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/styles/main.css">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" text="text/css" href="static/main.css">
-
-        <title>Ian Koide</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div class="top container-fluid" id="top">
-                <h1>Hello, I'm <b><a href="https://github.com/ikoide" style="text-decoration: none; color: #f48404;" class="hover-black" target="_blank">Ian Koide</a></b>.</h1>
-                <h1>I'm an Aspiring Programmer and Student.</h1>
-                <p><i>"Never trust anyone too much, remember the devil was once an angel."</i></p>
-                <hr>
-                <a href="#projects"><button>View My Work</button></a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
-                    <a class="navbar-brand" href="#">Koide</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#about">About</a>
+        <div class="container-fluid top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <!-- Temporary solution to float the nav to right. -->
+                    </ul>
+                    <ul class="navbar-nav" style="float: right;">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#skills">Skills</a>
+                            <a class="nav-link" href="#">BLOG</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#">CONTACT</a>
                         </li>
-                      </ul>
-                    </div>
-                    </div>
-                  </nav>
-        </header>
-        <main>
-            <div class="content-section" id="about" style="background-color: #fcfcfc; padding-bottom: 3rem; padding-top: 2rem; margin-top: -0.01rem;">
-                <h1>About</h1>
-                <p>¯\_(ツ)_/¯</p>
-                <hr>
-                <p style="width: 90%; margin-left: auto; margin-right: auto; display: block;">Ian possess experience in a multitude of programming languages and technologies, he is fueled by his passion to learn and enthusiasm in the computer science and numerous other related fields. Some recent projects Ian has worked on include, various full-stack web applications and simulations built using the popular programming language Python.</p>
-            </div>
-            <div class="content-section" id="skills">
-                <h1>Skills</h1>
-                <p>Things I'm decent at.</p>
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Python</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Flask</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Sys Admin</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
+            </nav>
+            <div class="container top-content">
+                <h1>
+                    I<span class="alt-color">'</span>M<br>IAN<br>KOIDE<span class="alt-color">.</span>
+                </h1>
+                <p>Student and Web Developer</p>
             </div>
-            <div class="projects" id="projects">
-                <h1>Projects</h1>
-                <p>Recent and ongoing work.</p>
-                <hr>
-                <div class="project">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <img src="static/project-i2.png">
-                        </div>
-                        <div class="col-md-5 project-text">
-                            <h2>Project i</h2>
-                            <p>9/30/19</p>
-                            <p style="color: #f48404;">Python, Flask, SQL, HTML, CSS</p>
-                            <p>Project i is an upcoming decentralized social media platform that focuses on anoniminity and freedom of speech. Project i will be run on a peer-to-peer network were users can help host the sites content aswell as their own. A central server will provide initial data for the nodes until we can fully sustain decentralization.</p>
-                            <h5><a href="http://projecti.io" target="_blank">Site</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <img src="static/pong.png">
-                        </div>
-                        <div class="col-md-5 project-text">
-                            <h2>Pong Bot Algorithms</h2>
-                            <p>9/19/19</p>
-                            <p style="color: #f48404;">Python, Pygame</p>
-                            <p>Python simulation writen using the python library Pygame. Made for simulation and testing of different pong bot algorithms while displaying useful stats and information.</p>
-                            <h5><a href="https://github.com/ikoide/pong-scienceproject" target="_blank">Github</a></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <img src="static/polarscape.jpg">
-                        </div>
-                        <div class="col-md-5 project-text">
-                            <h2>Polarscape Network</h2>
-                            <p>9/20/19</p>
-                            <p style="color: #f48404;">Python, Flask, HTML, CSS</p>
-                            <p>Polarscape Network Minecraft site.</p>
-                            <h5><a href="http://polarscape.org" target="_blank">Site</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact" id="contact">
-                <h1>Contact</h1>
-                <hr>
-                <form name="contact" method="POST" data-netlify="true" style="margin-top: 40px;">
-                    <h4>Name</h4>
-                    <input type="text" name="name" />
-                    <h4>Email</h4>
-                    <input type="email" name="email" />
-                    <h4>Message</h4>
-                    <input type="text" name="message" /><br><br>
-                    <button type="submit">Send</button>
-                </form>                  
-            </div>
-            <div class="footer">
-                <h1>I A N K O I D E</h1>
-                <small>What project am I <a href="http://project.iankoide.dev" target="_blank">currently working</a> on?</small><br>
-                <small>© Ian Koide 2019-2020, All Rights Reserved</small>
-            </div>
-        </main>
+        </div>
     </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                    }, 1000, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
-</script>
 </html>

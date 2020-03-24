@@ -1,0 +1,35 @@
+.top {
+    background-color: #ffffff;
+    color: #222326;
+    height: 100vh;
+}
+
+.top-content {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.top h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+.top p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.top li {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.alt-color {
+    color: #FF6C02;
+}
+
+.nav-link {
+    margin-right: 0.75rem;
+}
