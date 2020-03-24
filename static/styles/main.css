@@ -1,5 +1,10 @@
+html, body {
+    background-color: #fbfbfb;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .top {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     color: #222326;
     height: 100vh;
 }
@@ -32,4 +37,116 @@
 
 .nav-link {
     margin-right: 0.75rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline 1px solid #FF6C02;
+    text-underline-offset: 0.6rem;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.event {
+    padding: 3rem;
+}
+
+.event-date {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.border-r {
+    border-right: 3px solid #FF6C02;
+}
+
+.border-l {
+    border-left: 3px solid #FF6C02;
+}
+
+.border-b {
+    border-bottom: 3px solid #FF6C02;
+}
+
+.event-last {
+    height: 2rem;
+    border-right: 3px solid #FF6C02;
+}
+
+.project {
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    background-color: #ffffff;
+    -webkit-transition: all .4s ease;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-body {
+    padding: 1rem;
+}
+
+.project p {
+    margin: 0;
+    text-align: center;
+}
+
+.project .links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.project .btn {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+    /* display: inline; */
+}
+
+.project-hr {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    width: 65%;
+    background-color: rgb(197, 197, 197);
+}
+
+.project:hover {
+    box-shadow: 0px 5px 33px 10px rgba(168, 168, 168, 0.39);
+}
+
+.footer {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 4rem;
+    background-color: #252525;;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.social-btn {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem;
+}
+
+.social-icon {
+    margin-right: 0.5rem;
 }
