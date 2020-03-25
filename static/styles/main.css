@@ -101,7 +101,6 @@ html, body {
     width: 100%;
     background-color: #ffffff;
     -webkit-transition: all .4s ease;
-    height: 19rem;
 }
 
 .project-image {
@@ -129,8 +128,8 @@ html, body {
 }
 
 .project-hr {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
     width: 65%;
     background-color: rgb(197, 197, 197);
 }
