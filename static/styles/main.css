@@ -1,11 +1,11 @@
 html, body {
-    background-color: #fbfbfb;
+    background-color: #f8f8f8;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
 .top {
-    background-color: #fbfbfb;
+    background-color: #f8f8f8;
     color: #222326;
     height: 100vh;
 }
@@ -90,6 +90,10 @@ html, body {
     border-right: 3px solid #FF6C02;
 }
 
+.projects {
+    height: 80vh;
+}
+
 .project {
     font-weight: bold;
     margin-top: 2rem;
@@ -97,6 +101,7 @@ html, body {
     width: 100%;
     background-color: #ffffff;
     -webkit-transition: all .4s ease;
+    height: 19rem;
 }
 
 .project-image {
