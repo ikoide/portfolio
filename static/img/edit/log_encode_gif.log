@@ -13,7 +13,7 @@ ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg develop
 Splitting the commandline.
 Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
 Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
-Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument '/tmp/KritaFFmpegProgress.uiCuAP'.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument '/tmp/KritaFFmpegProgress.lUyvjw'.
 Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '3'.
 Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
 Reading option '-i' ... matched as input url with argument '/home/lan/Documents/ikoide/static/img/edit/frame%04d.png'.
@@ -25,8 +25,8 @@ Finished splitting the commandline.
 Parsing a group of options: global .
 Applying option v (set logging level) with argument debug.
 Applying option nostdin (enable or disable interaction on standard input) with argument 0.
-Applying option progress (write program-readable progress information) with argument /tmp/KritaFFmpegProgress.uiCuAP.
-[file @ 0x55e6c65bb0a0] Setting default whitelist 'file,crypto'
+Applying option progress (write program-readable progress information) with argument /tmp/KritaFFmpegProgress.lUyvjw.
+[file @ 0x5608e1bff0a0] Setting default whitelist 'file,crypto'
 Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
 Applying option y (overwrite output files) with argument 1.
 Successfully parsed a group of options.
@@ -34,36 +34,36 @@ Parsing a group of options: input url /home/lan/Documents/ikoide/static/img/edit
 Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 3.
 Successfully parsed a group of options.
 Opening an input file: /home/lan/Documents/ikoide/static/img/edit/frame%04d.png.
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0000.png' for reading
-[file @ 0x55e6c65be760] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65be960] Statistics: 23910 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0001.png' for reading
-[file @ 0x55e6c65c0920] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65be780] Statistics: 23928 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0002.png' for reading
-[file @ 0x55e6c65c0f80] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c1240] Statistics: 23930 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0003.png' for reading
-[file @ 0x55e6c65c15c0] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c16a0] Statistics: 23943 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0004.png' for reading
-[file @ 0x55e6c65c1c60] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c1660] Statistics: 23927 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0005.png' for reading
-[file @ 0x55e6c65c2340] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c1660] Statistics: 23910 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0006.png' for reading
-[file @ 0x55e6c65c5ee0] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c1660] Statistics: 23931 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0007.png' for reading
-[file @ 0x55e6c65c65c0] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c1660] Statistics: 23932 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0008.png' for reading
-[file @ 0x55e6c65c6800] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c6a80] Statistics: 23912 bytes read, 0 seeks
-[image2 @ 0x55e6c65bb520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0009.png' for reading
-[file @ 0x55e6c65c6800] Setting default whitelist 'file,crypto'
-[AVIOContext @ 0x55e6c65c6e00] Statistics: 23927 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0000.png' for reading
+[file @ 0x5608e1c02760] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c02960] Statistics: 23909 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0001.png' for reading
+[file @ 0x5608e1c04920] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c02780] Statistics: 23927 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0002.png' for reading
+[file @ 0x5608e1c04f80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c05240] Statistics: 23929 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0003.png' for reading
+[file @ 0x5608e1c055c0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c056a0] Statistics: 23943 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0004.png' for reading
+[file @ 0x5608e1c05c60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c05660] Statistics: 23925 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0005.png' for reading
+[file @ 0x5608e1c06340] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c05660] Statistics: 23909 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0006.png' for reading
+[file @ 0x5608e1c09ee0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c05660] Statistics: 23929 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0007.png' for reading
+[file @ 0x5608e1c0a5c0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c05660] Statistics: 23930 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0008.png' for reading
+[file @ 0x5608e1c0a800] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c0aa80] Statistics: 23910 bytes read, 0 seeks
+[image2 @ 0x5608e1bff520] Opening '/home/lan/Documents/ikoide/static/img/edit/frame0009.png' for reading
+[file @ 0x5608e1c0a800] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x5608e1c0ae00] Statistics: 23925 bytes read, 0 seeks
 Input #0, image2, from '/home/lan/Documents/ikoide/static/img/edit/frame%04d.png':
   Duration: 00:00:00.40, start: 0.000000, bitrate: N/A
     Stream #0:0, 10, 1/25: Video: png, 1 reference frame, rgba(pc), 1000x3700 [SAR 15748:15748 DAR 10:37], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
@@ -71,11 +71,11 @@ Successfully opened the file.
 Parsing a group of options: input url /home/lan/Documents/ikoide/static/img/edit/palette.png.
 Successfully parsed a group of options.
 Opening an input file: /home/lan/Documents/ikoide/static/img/edit/palette.png.
-[NULL @ 0x55e6c65c7480] Opening '/home/lan/Documents/ikoide/static/img/edit/palette.png' for reading
-[file @ 0x55e6c65c67a0] Setting default whitelist 'file,crypto'
-[png_pipe @ 0x55e6c65c7480] Format png_pipe probed with size=2048 and score=99
-[png_pipe @ 0x55e6c65c7480] Before avformat_find_stream_info() pos: 0 bytes read:195 seeks:0 nb_streams:1
-[png_pipe @ 0x55e6c65c7480] After avformat_find_stream_info() pos: 195 bytes read:195 seeks:0 frames:1
+[NULL @ 0x5608e1c0b480] Opening '/home/lan/Documents/ikoide/static/img/edit/palette.png' for reading
+[file @ 0x5608e1c0a7a0] Setting default whitelist 'file,crypto'
+[png_pipe @ 0x5608e1c0b480] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 0x5608e1c0b480] Before avformat_find_stream_info() pos: 0 bytes read:195 seeks:0 nb_streams:1
+[png_pipe @ 0x5608e1c0b480] After avformat_find_stream_info() pos: 195 bytes read:195 seeks:0 frames:1
 Input #1, png_pipe, from '/home/lan/Documents/ikoide/static/img/edit/palette.png':
   Duration: N/A, bitrate: N/A
     Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
@@ -84,44 +84,44 @@ detected 4 logical cores
 Parsing a group of options: output url /home/lan/Documents/ikoide/static/img/edit/me.gif.
 Successfully parsed a group of options.
 Opening an output file: /home/lan/Documents/ikoide/static/img/edit/me.gif.
-[file @ 0x55e6c65de3a0] Setting default whitelist 'file,crypto'
+[file @ 0x5608e1c223a0] Setting default whitelist 'file,crypto'
 Successfully opened the file.
 Stream mapping:
   Stream #0:0 (png) -> paletteuse:default
   Stream #1:0 (png) -> paletteuse:palette
   paletteuse -> Stream #0:0 (gif)
 cur_dts is invalid (this is harmless if it occurs once at the start per stream)
-    Last message repeated 10 times
-[image2 @ 0x55e6c65bb520] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+    Last message repeated 2607 times
+[image2 @ 0x5608e1bff520] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
 cur_dts is invalid (this is harmless if it occurs once at the start per stream)
     Last message repeated 4 times
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] Setting 'video_size' to value '1000x3700'
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] Setting 'pix_fmt' to value '28'
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] Setting 'time_base' to value '1/3'
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] Setting 'pixel_aspect' to value '15748/15748'
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] Setting 'sws_param' to value 'flags=2'
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] Setting 'frame_rate' to value '3/1'
-[graph 0 input from stream 0:0 @ 0x55e6c665e9e0] w:1000 h:3700 pixfmt:rgba tb:1/3 fr:3/1 sar:15748/15748 sws_param:flags=2
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] Setting 'video_size' to value '16x16'
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] Setting 'pix_fmt' to value '28'
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] Setting 'time_base' to value '1/25'
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] Setting 'pixel_aspect' to value '1/1'
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] Setting 'sws_param' to value 'flags=2'
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] Setting 'frame_rate' to value '25/1'
-[graph 0 input from stream 1:0 @ 0x55e6c66e2080] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1 sws_param:flags=2
-[format @ 0x55e6c665f400] compat: called with args=[rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8]
-[format @ 0x55e6c665f400] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
-[auto_scaler_0 @ 0x55e6c66e43e0] w:iw h:ih flags:'bilinear' interl:0
-[Parsed_paletteuse_0 @ 0x55e6c66605a0] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
-[auto_scaler_1 @ 0x55e6c66e56c0] w:iw h:ih flags:'bilinear' interl:0
-[Parsed_paletteuse_0 @ 0x55e6c66605a0] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
-[AVFilterGraph @ 0x55e6c665f6c0] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
-[swscaler @ 0x55e6c66e6cc0] Forcing full internal H chroma due to input having non subsampled chroma
-[auto_scaler_0 @ 0x55e6c66e43e0] w:1000 h:3700 fmt:rgba sar:15748/15748 -> w:1000 h:3700 fmt:bgra sar:1/1 flags:0x2
-[swscaler @ 0x55e6c670fee0] Forcing full internal H chroma due to input having non subsampled chroma
-[auto_scaler_1 @ 0x55e6c66e56c0] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
-[Parsed_paletteuse_0 @ 0x55e6c66605a0] [framesync @ 0x55e6c66606a8] Selected 1/75 time base
-[Parsed_paletteuse_0 @ 0x55e6c66605a0] [framesync @ 0x55e6c66606a8] Sync level 2
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] Setting 'video_size' to value '1000x3700'
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] Setting 'time_base' to value '1/3'
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] Setting 'pixel_aspect' to value '15748/15748'
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] Setting 'frame_rate' to value '3/1'
+[graph 0 input from stream 0:0 @ 0x5608e1ca3560] w:1000 h:3700 pixfmt:rgba tb:1/3 fr:3/1 sar:15748/15748 sws_param:flags=2
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0x5608e1d261c0] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1 sws_param:flags=2
+[format @ 0x5608e1ca3a00] compat: called with args=[rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8]
+[format @ 0x5608e1ca3a00] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 0x5608e1d285a0] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0x5608e1ca4700] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 0x5608e1d29880] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0x5608e1ca4700] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 0x5608e1ca37a0] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 0x5608e1d2ae80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0x5608e1d285a0] w:1000 h:3700 fmt:rgba sar:15748/15748 -> w:1000 h:3700 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 0x5608e1d540a0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 0x5608e1d29880] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 0x5608e1ca4700] [framesync @ 0x5608e1ca47e8] Selected 1/75 time base
+[Parsed_paletteuse_0 @ 0x5608e1ca4700] [framesync @ 0x5608e1ca47e8] Sync level 2
 Output #0, gif, to '/home/lan/Documents/ikoide/static/img/edit/me.gif':
   Metadata:
     encoder         : Lavf57.83.100
@@ -129,24 +129,24 @@ Output #0, gif, to '/home/lan/Documents/ikoide/static/img/edit/me.gif':
     Metadata:
       encoder         : Lavc57.107.100 gif
 Clipping frame in rate conversion by 0.000008
-[gif @ 0x55e6c65dd5c0] 200x600 image at pos (201;1001) [area:1000x3700]
+[gif @ 0x5608e1c215c0] 200x600 image at pos (201;1001) [area:1000x3700]
     Last message repeated 1 times
-[gif @ 0x55e6c65dd5c0] 300x700 image at pos (101;901) [area:1000x3700]
+[gif @ 0x5608e1c215c0] 300x700 image at pos (101;901) [area:1000x3700]
     Last message repeated 1 times
-frame=    5 fps=0.0 q=-0.0 size=       1kB time=00:00:01.34 bitrate=   4.8kbits/s speed=2.31x    [gif @ 0x55e6c65dd5c0] 200x600 image at pos (201;1001) [area:1000x3700]
+frame=    5 fps=0.0 q=-0.0 size=       1kB time=00:00:01.34 bitrate=   4.8kbits/s speed=2.28x    [gif @ 0x5608e1c215c0] 200x600 image at pos (201;1001) [area:1000x3700]
     Last message repeated 1 times
-[gif @ 0x55e6c65dd5c0] 200x500 image at pos (201;1001) [area:1000x3700]
-[gif @ 0x55e6c65dd5c0] 200x400 image at pos (101;1201) [area:1000x3700]
-[gif @ 0x55e6c65dd5c0] 300x300 image at pos (101;1201) [area:1000x3700]
-[Parsed_paletteuse_0 @ 0x55e6c66605a0] [framesync @ 0x55e6c66606a8] Sync level 0
-frame=   10 fps=8.8 q=-0.0 size=       1kB time=00:00:03.01 bitrate=   2.1kbits/s speed=2.66x    [out_0_0 @ 0x55e6c66e2ac0] EOF on sink link out_0_0:default.
+[gif @ 0x5608e1c215c0] 200x500 image at pos (201;1001) [area:1000x3700]
+[gif @ 0x5608e1c215c0] 200x400 image at pos (101;1201) [area:1000x3700]
+[gif @ 0x5608e1c215c0] 300x300 image at pos (101;1201) [area:1000x3700]
+[Parsed_paletteuse_0 @ 0x5608e1ca4700] [framesync @ 0x5608e1ca47e8] Sync level 0
+frame=   10 fps=8.7 q=-0.0 size=       1kB time=00:00:03.01 bitrate=   2.1kbits/s speed=2.63x    [out_0_0 @ 0x5608e1d26ce0] EOF on sink link out_0_0:default.
 No more output streams to write to, finishing.
-frame=   10 fps=8.8 q=-0.0 Lsize=      59kB time=00:00:03.01 bitrate= 161.7kbits/s speed=2.66x    
-[AVIOContext @ 0x55e6c65bb340] Statistics: 0 seeks, 3 writeouts
+frame=   10 fps=8.7 q=-0.0 Lsize=      59kB time=00:00:03.01 bitrate= 161.7kbits/s speed=2.62x    
+[AVIOContext @ 0x5608e1bff340] Statistics: 0 seeks, 3 writeouts
 video:59kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.469803%
 Input file #0 (/home/lan/Documents/ikoide/static/img/edit/frame%04d.png):
-  Input stream #0:0 (video): 10 packets read (239250 bytes); 10 frames decoded; 
-  Total: 10 packets (239250 bytes) demuxed
+  Input stream #0:0 (video): 10 packets read (239236 bytes); 10 frames decoded; 
+  Total: 10 packets (239236 bytes) demuxed
 Input file #1 (/home/lan/Documents/ikoide/static/img/edit/palette.png):
   Input stream #1:0 (video): 1 packets read (195 bytes); 1 frames decoded; 
   Total: 1 packets (195 bytes) demuxed
@@ -154,5 +154,5 @@ Output file #0 (/home/lan/Documents/ikoide/static/img/edit/me.gif):
   Output stream #0:0 (video): 10 frames encoded; 10 packets muxed (59940 bytes); 
   Total: 10 packets (59940 bytes) muxed
 11 frames successfully decoded, 0 decoding errors
-[AVIOContext @ 0x55e6c65de540] Statistics: 0 seeks, 2 writeouts
-[AVIOContext @ 0x55e6c65c6840] Statistics: 195 bytes read, 0 seeks
+[AVIOContext @ 0x5608e1c22540] Statistics: 0 seeks, 2 writeouts
+[AVIOContext @ 0x5608e1c0a840] Statistics: 195 bytes read, 0 seeks
