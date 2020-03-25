@@ -1,6 +1,7 @@
 html, body {
     background-color: #fbfbfb;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .top {
@@ -59,7 +60,7 @@ html, body {
 }
 
 .event-date {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -147,6 +148,31 @@ html, body {
     margin: 1rem;
 }
 
+.social-btn:hover {
+    background-color: rgb(28, 28, 28);
+}
+
 .social-icon {
     margin-right: 0.5rem;
+}
+
+.contact {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 2rem;
+    background-color: #FF6C02;
+}
+
+.contact p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.alt-btn {
+    color: #ffffff;
+    font-size: 1.1rem;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #ffffff;
+    border-radius: 0.2rem;
+    padding: 0.9rem 2rem;
 }
