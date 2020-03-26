@@ -32,6 +32,17 @@ html, body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.ian-koide-img {
+    height: 19rem;
+    margin: 0 auto;
+    display: block;
+}
+
+@media all and (max-width: 780px) {
+    .ian-koide-img {
+        display: none;
+    }
+}
 .alt-color {
     color: #FF6C02;
 }
