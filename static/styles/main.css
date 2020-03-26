@@ -8,12 +8,13 @@ html, body {
     background-color: #f8f8f8;
     color: #222326;
     height: 100vh;
+    padding: 2rem;
 }
 
 .top-content {
     width: 60%;
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 12vh;
 }
 
 .top h1 {
