@@ -7,8 +7,8 @@ html, body {
 .top {
     background-color: #f8f8f8;
     color: #222326;
-    height: 100vh;
     padding: 2rem;
+    margin-bottom: 6rem;
 }
 
 .top-content {
