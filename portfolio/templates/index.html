@@ -18,6 +18,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         
         <script src="https://kit.fontawesome.com/010964ebfa.js" crossorigin="anonymous"></script>
+
+        <title>Ian Koide | {{ title }}</title>
     </head>
     <body>
         <div class="container-fluid top">
@@ -29,13 +31,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#portfolio">PORTFOLIO<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="#">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                            <a class="nav-link" href="{{ url_for('blog') }}">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">CONTACT</a>
