@@ -6,7 +6,7 @@ html, body {
 
 .top {
     background-color: #f8f8f8;
-    color: #222326;
+    color: hsl(225, 6%, 14%);
     padding: 2rem;
     margin-bottom: 6rem;
 }
@@ -58,8 +58,9 @@ html, body {
 }
 
 .main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .footer {
@@ -117,4 +118,24 @@ html, body {
 .social-links a {
     color: #ffffff;
     font-size: 0.85rem;
+}
+
+.bg-black {
+    background-color: #252525;
+}
+
+.blog-teaser {
+    border: 1px solid #adadad;
+    margin-bottom: 2rem;
+    background-color: #fcfcfc;
+    padding: 1rem;
+}
+
+.blog-meta {
+    font-size: 0.87rem;
+}
+
+.blog-teaser-img {
+    width: 100%;
+    border: 1px solid #c7c7c7;
 }
