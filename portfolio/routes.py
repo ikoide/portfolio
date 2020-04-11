@@ -12,3 +12,7 @@ def home():
 @app.route("/blog")
 def blog():
     return render_template("blog.html", title='Blog')
+
+@app.route("/blog_page") # Change to actual blog with backend
+def blog_page():
+    return render_template("blog_page.html", title="Blog Page")
