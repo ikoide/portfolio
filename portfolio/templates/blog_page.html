@@ -5,19 +5,19 @@
     <p>Posted by <span class="badge badge-danger">Ian Koide</span> on <span class="badge badge-success">April 10th, 2020</span></p>
     <p class="post-content">If you're looking for a way to create a new hostname for your system on every reboot you've come to the right place. <a href="https://github.com/ikoide/HostnameReboot">The program can be found here</a>. The setup is minimal and requires only the cloning of a github repository and the creation of a cron job.</p>
     <div class="code">
-        git clone https://github.com/ikoide/HostnameReboot
+        $ git clone https://github.com/ikoide/HostnameReboot
     </div>
     <p class="post-content">After cloning the repository you have to create a cron job on the root user.</p>
     <div class="code">
-        sudo crontab -e
+        $ sudo crontab -e
     </div>
     <p class="post-content">Inside the crontab file you have to append this line to the file. You may remove the commented lines if you'd like.</p>  
     <div class="code">
-        @reboot /path/to/HostnameReboot/new_hostname.sh
+        $ @reboot /path/to/HostnameReboot/new_hostname.sh
     </div>  
     <p class="post-content">For example I'd use the following line.</p>
     <div class="code">
-        @reboot /home/lan/HostnameReboot/new_hostname.sh
+        $ @reboot /home/lan/HostnameReboot/new_hostname.sh
     </div>
     <p class="post-content">One last thing, you have to edit the file named config in the repo directory. Change the line in config to the path to your wordlist.</p>
     <p class="post-content">Now all you've got to do is reboot your system. You can open a new terminal session and see that your hostname has been updated to a random english word. If you'd like to use your own words for new hostnames read on.</p>

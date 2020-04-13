@@ -28,12 +28,12 @@ html, body {
 }
 
 .code {
-    border-radius: 0.1rem;
+    border-radius: 0.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #B6C1CB;
     padding: 0.75rem;
-    background-color: #3a3a3a;
+    background-color: #2B2B2B;
     font-family: 'SourceCodePro';   
 }
 
