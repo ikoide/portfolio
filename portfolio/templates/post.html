@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="post-wrapper">
+    <h1 class="post-title">{{ post.title }}</h1>
+    <p>Posted by <span class="badge badge-danger">Ian Koide</span> on <span class="badge badge-success">{{ post.post_date.strftime('%B %d, %Y') }}</span></p>
+    <p class="post-content">{{ Markup(post.content) }}</h1>
+</div>
+{% endblock %}

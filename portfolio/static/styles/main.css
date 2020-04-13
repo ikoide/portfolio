@@ -1,137 +1,8 @@
-@font-face {
-    font-family: "SourceCodePro";
-    src: url(../fonts/SourceCodePro/SourceCodePro-Regular.ttf);
-}
-
 html, body {
     background-color: #f8f8f8;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
-
-.top {
-    background-color: #f8f8f8;
-    color: hsl(225, 6%, 14%);
-    padding: 2rem;
-    margin-bottom: 6rem;
-}
-
-.top-content {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 12vh;
-}
-
-.top h1 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    font-size: 4.5rem;
-}
-
-.top p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
-
-.top li {
-    font-family: 'Work Sans', sans-serif;
-}
-
-.ian-koide-img {
-    height: 19rem;
-    margin: 0 auto;
-    display: block;
-}
-
-@media all and (max-width: 780px) {
-    .ian-koide-img {
-        display: none;
-    }
-}
-.alt-color {
-    color: #FF6C02;
-}
-
-.nav-link {
-    margin-right: 0.75rem;
-}
-
-.nav-link:hover {
-    text-decoration: underline 1px solid #FF6C02;
-    text-underline-offset: 0.6rem;
-}
-
-.main {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 2rem;
-}
-
-.wrapper {
-    width: 95%;
-    margin: 0 auto;
-    min-height: 75vh;
-    margin-top: 2rem;
-}
-
-.footer {
-    font-family: 'Noto Sans', sans-serif;
-    padding: 4rem;
-    background-color: #252525;;
-    color: rgba(255, 255, 255, 0.6);
-    text-align: center;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 0.85rem;
-}
-
-.social-btn {
-    background-color: rgb(31, 31, 31);
-    color: rgba(255, 255, 255, 0.6);
-    border: none;
-    border-radius: 0.2rem;
-    padding: 0.4rem 0.9rem;
-    font-family: 'Open Sans', sans-serif;
-    margin: 1rem;
-}
-
-.social-btn:hover {
-    background-color: rgb(28, 28, 28);
-}
-
-.social-icon {
-    margin-right: 0.5rem;
-}
-
-.contact {
-    font-family: 'Noto Sans', sans-serif;
-    color: #ffffff;
-    text-align: center;
-    padding: 6rem 2rem;
-    background-color: #FF6C02;
-}
-
-.contact p {
-    font-family: 'Roboto Slab', serif;
-}
-
-.alt-btn {
-    color: #ffffff;
-    font-size: 1.1rem;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid #ffffff;
-    border-radius: 0.2rem;
-    padding: 0.9rem 2rem;
-}
-
-.social-links a {
-    color: #ffffff;
-    font-size: 0.85rem;
-}
-
 .bg-black {
     background-color: #252525;
 }
@@ -157,12 +28,130 @@ html, body {
 }
 
 .code {
-    border-radius: 0.2rem;
+    border-radius: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #ffffff;
+    padding: 0.75rem;
     background-color: #3a3a3a;
+    font-family: 'SourceCodePro';   
 }
 
-.code code {
-    font-family: 'SourceCodePro';   
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    min-height: 75vh;
+    margin-top: 2rem;
+}
+
+
+.post-wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.post-title {
+    font-family: 'PlayFairMedium';
+}
+
+.post-content {
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+}
+
+.post-content a {
+    text-decoration: underline 1px solid;
+    color: #252525;
+}
+
+.post-content a:hover {
+    background-color: rgba(251, 255, 34, 0.65);
+}
+
+.post-img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.post-secondary {
+    font-family: 'Roboto';
+    font-size: 0.85rem;
+    color: #686868;
+    margin-top: 0rem;
+}
+
+.footer {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 4rem;
+    margin-top: 8rem;
+    background-color: #252525;;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+
+.social-btn {
+    background-color: rgb(31, 31, 31);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem;
+}
+
+.social-btn:hover {
+    background-color: rgb(28, 28, 28);
+}
+.social-icon {
+    margin-right: 0.5rem;
+}
+
+.post-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(58, 58, 58);
+  }
+  
+.post-nav li {
+    float: left;
+}
+
+.post-nav li a {
+    display: block;
     color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 3.2rem;
+}
+
+/* Change the link color to #111 (black) on hover */
+.post-nav li a:hover {
+    background-color: rgb(75, 75, 75);
+    color: #ffffff;
+}
+
+.title-form {
+    font-family: 'PlayFairMedium';
+}
+
+.content-form {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: none;
+    font-family: 'Roboto';
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; 
 }

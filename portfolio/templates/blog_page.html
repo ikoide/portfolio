@@ -1,37 +1,30 @@
 {% extends "layout.html" %}
 {% block content %}
-<h3>Creation of a Portfolio Website</h3>
-<p>Posted by <span class="badge badge-danger">Ian Koide</span> on <span class="badge badge-success">April 10th, 2020</span></p>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quasi debitis doloremque consequuntur fugiat ipsa eum ducimus aut dignissimos pariatur quae quas fugit exercitationem iusto, deserunt possimus, natus ea cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore eum cupiditate? Provident, porro distinctio ad omnis consectetur cum dolores illo, impedit ex aut eos et, quia blanditiis eaque! Error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquam cupiditate sit commodi nisi nobis. Aspernatur tempora quas fuga? Adipisci consequatur facilis quasi atque quae similique assumenda, amet perspiciatis sequi.</p>
-<div class="code">
-    <pre><code>
-    &lt;script&gt;
-        $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $(&quot;a&quot;).on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== &quot;&quot;) {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-        
-                // Store hash
-                var hash = this.hash;
-        
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                scrollTop: $(hash).offset().top
-                }, 800, function(){
-        
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-                });
-            } // End if
-            });
-        });
-    &lt;/script&gt; 
-    </code></pre>
+<div class="post-wrapper">
+    <h1 class="post-title">Creating a New Hostname on Every System Reboot</h1>
+    <p>Posted by <span class="badge badge-danger">Ian Koide</span> on <span class="badge badge-success">April 10th, 2020</span></p>
+    <p class="post-content">If you're looking for a way to create a new hostname for your system on every reboot you've come to the right place. <a href="https://github.com/ikoide/HostnameReboot">The program can be found here</a>. The setup is minimal and requires only the cloning of a github repository and the creation of a cron job.</p>
+    <div class="code">
+        git clone https://github.com/ikoide/HostnameReboot
+    </div>
+    <p class="post-content">After cloning the repository you have to create a cron job on the root user.</p>
+    <div class="code">
+        sudo crontab -e
+    </div>
+    <p class="post-content">Inside the crontab file you have to append this line to the file. You may remove the commented lines if you'd like.</p>  
+    <div class="code">
+        @reboot /path/to/HostnameReboot/new_hostname.sh
+    </div>  
+    <p class="post-content">For example I'd use the following line.</p>
+    <div class="code">
+        @reboot /home/lan/HostnameReboot/new_hostname.sh
+    </div>
+    <p class="post-content">One last thing, you have to edit the file named config in the repo directory. Change the line in config to the path to your wordlist.</p>
+    <p class="post-content">Now all you've got to do is reboot your system. You can open a new terminal session and see that your hostname has been updated to a random english word. If you'd like to use your own words for new hostnames read on.</p>
+    <img class="post-img" src="{{ url_for('static', filename='img/blog/terminal.png') }}">
+    <p class="post-secondary">(humanenesss?)</p>
+    <p class="post-content">In order to change the words that the program selects from, edit the words.txt file.</p>
+    <br>
+    <p class="post-content">Thanks for reading! For <a href="{{ url_for('blog') }}">more tech related articles head here</a>.</p>
 </div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem dolores dolorum est eaque. Pariatur, eius animi. Dignissimos quam consectetur est officia, alias, quisquam ipsa dolores eos totam aspernatur soluta! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, laboriosam, corrupti officia voluptatum natus quisquam amet tenetur ex molestiae neque ipsum voluptatibus unde sed mollitia porro deleniti quibusdam molestias expedita!</p>
 {% endblock %}

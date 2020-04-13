@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "SourceCodePro";
+    src: url(../fonts/SourceCodePro/SourceCodePro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RobotoSlab";
+    src: url(../fonts/RobotoSlab/static/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PlayFairMedium";
+    src: url(../fonts/PlayFair/static/PlayfairDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: "PlayFair";
+    src: url(../fonts/PlayFair/static/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PercyPixel";
+    src: url(../fonts/PercyPixel/Percy\ Pixel.ttf);
+}
+
+@font-face {
+    font-family: "Eurostile";
+    src: url(../fonts/Eurostile/Eurostile.ttf);
+}
+@font-face {
+    font-family: "EurostileBold";
+    src: url(../fonts/Eurostile/EurostileBold.ttf);
+}

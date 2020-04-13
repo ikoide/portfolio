@@ -1,161 +1,139 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Ian Koide Developer Portfolio">
-        <meta name="keywords" content="Portfolio, Web Developer, Ian Koide, Koide">
-        <meta name="author" content="Ian Koide">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab|Open+Sans:300|Work+Sans:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ian Koide's Developer Portfolio.">
+    <meta name="keywords" content="Portfolio, Web Developer, Ian Koide, Koide">
+    <meta name="author" content="Ian Koide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab|Open+Sans:300|Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/bootstrap.min.css') }}">
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/portfolio.css') }}">
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/fonts.css') }}">
+    
+    <script src="https://kit.fontawesome.com/010964ebfa.js" crossorigin="anonymous"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Ian Koide | {{ title }}</title>
+  </head>
+  <body>
+    <div class="container-fluid top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#portfolio">PORTFOLIO<span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('blog') }}">BLOG</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container top-content">
+        <div class="row">
+          <div class="col-6">
+            <h1>
+              I<span class="alt-color">'</span>M<br>IAN<br>KOIDE<span class="alt-color">.</span>
+            </h1>
+            <p>Student and Web Developer</p>
+          </div>
+          <div class="col-6">
+            <img class="ian-koide-img" src="static/img/ian-koide.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="inner-about">
+        <h1 class="display-4 about-header">Hello World</h1>
+        <p class="about-content">Hey. I'm Ian, I'm 14 and I create professional websites using a variety of technologies. I continuously learn and am hoping to expand my knowledge in the field of computer science.</p>
+      </div>
+    </div>
+    <div class="skills">
+      <i class="fas fa-code" style="font-size: 5rem; margin-bottom: 1.5rem; color: #FF6C02;"></i>
+      <h4 class="skills-header">Skills</h4>
+      <div class="skill">
+        <img src="{{ url_for('static', filename='img/html.png') }}" class="skill-img">
+        <p>HTML5</p>    
+      </div>
+      <div class="skill">
+        <img src="{{ url_for('static', filename='img/css.png') }}" class="skill-img">
+        <p>CSS3</p>    
+      </div>
+      <div class="skill">
+        <img src="{{ url_for('static', filename='img/js.png') }}" class="skill-img">
+        <p>JS</p>    
+      </div>
+      <div class="skill">
+        <img src="{{ url_for('static', filename='img/python.png') }}" class="skill-img">
+        <p>Python</p>    
+      </div>
+      <p>I code all projects from scratch using multiple technologies such as HTML5, CSS3, Javascript and Python. All sites are crafted carefully with the use of numerous tools including Git, VS Code and Terminal.</p>
+    </div>
+    <div class="work">
+      <h2 class="work-header">Recent Work</h2>
+      <p>Some projects I've recently worked on.</p>
+      <div class="row row-cols-3">
+        <div class="col">
+          <div class="job project-i">
+            <h4 class="job-header">Project i</h4>
+            <p class="job-stack">HTML, CSS, Javascript, Python</p>
+            <a href="https://github.com/project-eye" target="_blank"><button class="btn job-button">LEARN MORE</button></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="job minecraft">
+            <h4 class="job-header">Lorem Ipsum</h4>
+            <p class="job-stack">Python</p>
+            <button class="btn job-button">LEARN MORE</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="job filler">
+            <h4 class="job-header">Lorem Ipsum</h4>
+            <p class="job-stack">Python</p>
+            <button class="btn job-button">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h1 class="display-5">LET'S CREATE SOMETHING<br> INCREDIBLE TOGETHER</h1>
+      <br>
+      <h5>If you like my work and are currently in search<br> of a web developer contact me via one of<br> the social links below.</h5><br>
+      <a href="mailto:ian.koide@protonmail.com"><button class="alt-btn"><i class="fab fa-telegram-plane social-icon"></i>GET IN TOUCH</button></a><br><br>
+      <p class="social-links"><a href="#">Twitter</a> <span class="alt-color-2">|</span> <a href="https://stackoverflow.com/users/11907524/lan" target="_blank">Stack Overflow</a> <span class="alt-color-2">|</span> <a href="https://github.com/ikoide" target="_blank">Github</a></p>
+    </div>
+    <div class="footer">
+      <p>© 2020 <span class="alt-color">IAN KOIDE</span> . MADE IN AMERICA</p>
+      <a href="https://github.com/ikoide" target="_blank"><button class="social-btn"><i class="fab fa-github social-icon"></i>Follow me on Github</button></a>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        
-        <script src="https://kit.fontawesome.com/010964ebfa.js" crossorigin="anonymous"></script>
-
-        <title>Ian Koide | {{ title }}</title>
-    </head>
-    <body>
-        <div class="container-fluid top">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#portfolio">PORTFOLIO<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('blog') }}">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-            </nav>
-            <div class="container top-content">
-                <div class="row">
-                    <div class="col-6">
-                        <h1>
-                            I<span class="alt-color">'</span>M<br>IAN<br>KOIDE<span class="alt-color">.</span>
-                        </h1>
-                        <p>Student and Web Developer</p>
-                    </div>
-                    <div class="col-6">
-                        <img class="ian-koide-img" src="static/img/ian-koide.gif">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <img src="static/img/temp.png" style="width: 100%;"> -->
-        <div class="main">
-            <!-- <div class="projects" id="portfolio">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="project">
-                            <img class="project-image" src="static/img/project-i.png">
-                            <div class="project-body">
-                                <p>HTML & CSS</p>
-                                <hr class="project-hr">
-                                <p>Javascript</p>
-                                <hr class="project-hr">
-                                <p>Python Flask</p>
-                                <hr class="project-hr">
-                                <p>MySQL</p>
-                                <div class="links">
-                                    <a href="https://github.com/project-eye" target="_blank"><button class="btn btn-primary">Github</button></a>
-                                    <a href="https://projecti.io" target="_blank"><button class="btn btn-secondary">Website</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="project" style="height: 21.5rem;">
-                            
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="project" style="height: 21.5rem;">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="event-first">
-
-                </div>
-                <div class="event border-r border-b border-t" style="text-align: right;">
-                    <div class="event-date">2020</div>
-                    Starting off the year strong even due to global setbacks. Continued advancement of knowledge in Flask and other web tech stacks. Development continuing on Project-i.
-                </div>
-                <div class="event border-l border-b last-event">
-                    <div class="event-date">2019</div>
-                    Spent time reinforcing knowledge with Python, HTML and CSS. Gained skills in various fields of tech such as the microframework Flask, system administration and UI design.
-                </div>
-                <div class="event-last"></div>
-            </div> -->
-        </div>
-        <div class="contact" id="contact">
-            <h1 class="display-5">LET'S CREATE SOMETHING<br> INCREDIBLE TOGETHER</h1>
-            <br>
-            <h5>If you like my work and are currently in search<br> of a web developer contact me via one of<br> the social links below.</h5><br>
-            <a href="mailto:ian.koide@protonmail.com"><button class="alt-btn"><i class="fab fa-telegram-plane social-icon"></i>GET IN TOUCH</button></a><br><br>
-            <p class="social-links"><a href="#">Twitter</a> <span style="color: rgba(224, 224, 224, 0.5);">|</span> <a href="https://stackoverflow.com/users/11907524/lan" target="_blank">Stack Overflow</a> <span style="color: rgba(224, 224, 224, 0.5);">|</span> <a href="https://github.com/ikoide" target="_blank">Github</a></p>
-        </div>
-        <div class="footer">
-            <p>© 2020 <span style="color: #FF6C02;">IAN KOIDE</span> . MADE IN AMERICA</p>
-            <a href="https://github.com/ikoide" target="_blank"><button class="social-btn"><i class="fab fa-github social-icon"></i>Follow me on Github</button></a>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-        
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+    
+            var hash = this.hash;
+    
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
         });
-        </script> 
-    </body>
+      });
+    </script> 
+  </body>
 </html>
