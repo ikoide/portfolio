@@ -1,33 +1,35 @@
+/* For general text */
 @font-face {
-    font-family: "SourceCodePro";
-    src: url(../fonts/SourceCodePro/SourceCodePro-Regular.ttf);
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans/OpenSans-Light.ttf);
 }
 
-@font-face {
-    font-family: "RobotoSlab";
-    src: url(../fonts/RobotoSlab/static/RobotoSlab-Regular.ttf);
-}
-
+/* For blog post titles */
 @font-face {
     font-family: "PlayFairMedium";
     src: url(../fonts/PlayFair/static/PlayfairDisplay-Medium.ttf);
 }
 
-@font-face {
-    font-family: "PlayFair";
-    src: url(../fonts/PlayFair/static/PlayfairDisplay-Regular.ttf);
-}
-
+/* For cryptic "Hello World" */
 @font-face {
     font-family: "PercyPixel";
     src: url(../fonts/PercyPixel/Percy\ Pixel.ttf);
 }
 
+/* For sub-headers text */
 @font-face {
     font-family: "Eurostile";
     src: url(../fonts/Eurostile/Eurostile.ttf);
 }
+
+/* For section headers && Important information */
 @font-face {
     font-family: "EurostileBold";
     src: url(../fonts/Eurostile/EurostileBold.ttf);
+}
+
+/* For code blocks */
+@font-face {
+  font-family: "LiberationMono";
+  src: url(../fonts/LiberationMono/LiberationMono-Regular.ttf);
 }

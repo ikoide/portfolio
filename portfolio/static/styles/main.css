@@ -1,6 +1,6 @@
 html, body {
     background-color: #f8f8f8;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'OpenSans';
     scroll-behavior: smooth;
 }
 .bg-black {
@@ -34,7 +34,8 @@ html, body {
     color: #B6C1CB;
     padding: 0.75rem;
     background-color: #2B2B2B;
-    font-family: 'SourceCodePro';   
+    font-family: 'LiberationMono';
+    font-size: 0.95rem; 
 }
 
 .wrapper {
@@ -81,17 +82,16 @@ html, body {
 }
 
 .footer {
-    font-family: 'Noto Sans', sans-serif;
-    padding: 4rem;
-    margin-top: 8rem;
-    background-color: #252525;;
-    color: rgba(255, 255, 255, 0.6);
-    text-align: center;
+  padding: 4rem;
+  background-color: #252525;;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'OpenSans';
+  text-align: center;
 }
 
 .footer p {
-    margin: 0;
-    font-size: 0.85rem;
+  margin: 0;
+  font-size: 0.85rem;
 }
 
 
@@ -101,7 +101,7 @@ html, body {
     border: none;
     border-radius: 0.2rem;
     padding: 0.4rem 0.9rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     margin: 1rem;
 }
 

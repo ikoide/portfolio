@@ -87,7 +87,7 @@ html, body {
   margin-top: -14rem;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  font-family: 'Eurostile';
+  font-family: 'OpenSans';
   text-align: center;
   border: 1px solid rgb(199, 205, 206);
   border-radius: 0.3rem;
@@ -106,7 +106,7 @@ html, body {
   font-size: 1.1rem;
 }
 
-.skill-img {
+.skill img {
   height: 5rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -201,12 +201,12 @@ html, body {
   padding: 6rem 2rem;
   color: #ffffff;
   background-color: #FF6C02;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Eurostile';
   text-align: center;
 }
 
-.contact p {
-  font-family: 'RobotoSlab', serif;
+.contact h5 {
+  font-family: 'OpenSans';
 }
 
 .alt-btn {
@@ -229,7 +229,7 @@ html, body {
   padding: 4rem;
   background-color: #252525;;
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'OpenSans';
   text-align: center;
 }
 

@@ -9,7 +9,7 @@ from portfolio.models import Post
 
 @app.route("/")
 def home():
-    return render_template("index.html", title='Home')
+    return render_template("index.html", title='Portfolio')
 
 @app.route("/blog")
 def blog():
