@@ -54,7 +54,7 @@ html, body {
 
 .ian-koide-img {
   height: 19rem;
-  margin: 0 auto;
+  margin-left: 12rem;
   display: block;
 }
 
@@ -107,7 +107,7 @@ html, body {
 }
 
 .skill img {
-  height: 5rem;
+  width: 10.5vw;
   margin-left: 2rem;
   margin-right: 2rem;
 }
