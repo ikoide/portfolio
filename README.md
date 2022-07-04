@@ -1,3 +1,3 @@
 # Ian Koide's Portfolio
 
-[Portfolio](https://iankoide.dev)
+[Portfolio](https://sewer.fail)
