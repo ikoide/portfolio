@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="Ian Koide's Developer Portfolio.">
-    <meta name="keywords" content="Portfolio, Web Developer, Ian Koide, Koide">
+    <meta name="keywords" content="portfolio,web,developer,html,css,python,javascript,js,ian koide,koide">
     <meta name="author" content="Ian Koide">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
     <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/fonts.css') }}">
-    <link rel="stylesheet" text="text/css" media="only screen and (max-width: 767px), only screen and (max-device-width: 767px)" href="{{ url_for('static', filename='styles/portfolio.mobile.css') }}">
-    <link rel="stylesheet" text="text/css" media="only screen and (min-width : 768px) and (max-width : 1024px)" href="{{ url_for('static', filename='portfolio.tablet.css') }}">
-
-    <script src="https://kit.fontawesome.com/010964ebfa.js" crossorigin="anonymous"></script>
 
     <title>Ian Koide | {{ title }}</title>
   </head>
@@ -32,6 +28,11 @@
           KOIDE<span class="color-alt">.</span>
         </h1>
         <p>Student &<br> Developer</p>
+      </div>
+      <div class="side-nav">
+        <img class="dot active" src="{{ url_for('static', filename='img/dot_active.png') }}">
+        <img class="dot" src="{{ url_for('static', filename='img/dot.png') }}">
+        <img class="dot" src="{{ url_for('static', filename='img/dot.png') }}">
       </div>
       <img class="mark-tag" src="{{ url_for('static', filename='img/mark.png') }}">
     </div>

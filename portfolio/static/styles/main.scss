@@ -33,16 +33,42 @@ h1, h2, h3, h4, h5, h6, p {
 
 .splash {}
 
+.side-nav {
+    position: fixed;
+    left: 2rem;
+    bottom: 4rem;
+}
+
+.dot {
+    display: block;
+    width: 1.2rem;
+    margin: 0.45rem 0rem;
+}
+
 .mark-tag {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 2rem;
+    bottom: -0.5rem;
 }
 
 .skills-section {
     height: 50vh;
     background-color: #52F058;
 }
+
+.crypto-prices {
+  position: absolute;
+  font-size: 0.9rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  font-family: "FiraMono";
+}
+
+.btc { color: #E38215; }
+.bch { color: #7AFA5A; }
+.eth { color: #7A91B3; }
+.xmr { color: #FF6600; }
 
 .navbar {
     padding: 0rem 2rem;
