@@ -33,3 +33,8 @@
   font-family: "LiberationMono";
   src: url(../fonts/LiberationMono/LiberationMono-Regular.ttf);
 }
+
+@font-face {
+  font-family: "WorkSans";
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}

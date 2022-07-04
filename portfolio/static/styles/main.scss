@@ -1,0 +1,71 @@
+html, body {
+    color: #F8F8F8;
+    background-color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.color-alt { color: #52F058; }
+
+.splash-section {
+    height: 100vh;
+    font-family: "WorkSans";
+
+    scroll-behavior: smooth;
+
+    h1 {
+        font-size: 7rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 2.4rem;
+        font-weight: 300;
+    }
+}
+
+.splash-text {
+    padding: 8rem;
+}
+
+.splash {}
+
+.mark-tag {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.skills-section {
+    height: 50vh;
+    background-color: #52F058;
+}
+
+.navbar {
+    padding: 0rem 2rem;
+    float: right;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            font-family: "WorkSans";
+            float: left;
+        }
+
+        li a {
+            color: #F8F8F8;
+            text-decoration: none;
+            padding: 0rem 1rem;
+        }
+
+        li a:hover {
+            color: #52F058;
+            transition-duration: 100ms;
+        }
+    }
+}
