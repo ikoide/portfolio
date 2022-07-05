@@ -1,4 +1,3 @@
-from PIL import Image
 from flask import Blueprint, render_template, url_for, flash, redirect, request, abort, Markup, send_from_directory
 from portfolio.main.forms import AdminForm, PostForm
 from portfolio.main.models import Post

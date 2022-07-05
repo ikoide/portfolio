@@ -1,6 +1,7 @@
 html, body {
   color: #F8F8F8;
   background-color: #000000;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -45,12 +46,14 @@ h1, h2, h3, h4, h5, h6, p {
 .mark-tag {
   position: absolute;
   right: 2rem;
-  bottom: -0.5rem;
+  bottom: 0;
 }
 
 .skills-section {
-  height: 50vh;
   background-color: #52F058;
+  font-family: "WorkSans";
+  font-size: 2rem;
+  padding: 8rem;
 }
 
 .crypto-prices {
