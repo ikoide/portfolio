@@ -16,6 +16,8 @@ html, body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    height: -webkit-fill-available;
 }
 
 *,
@@ -32,9 +34,11 @@ h1, h2, h3, h4, h5, h6, p {
 .pop { color: $--COLOR-pop; }
 
 .splash-section {
-    height: 100vh;
     min-height: -webkit-fill-available;
     font-family: "WorkSans";
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 
     h1 {
         font-size: 22vw;
