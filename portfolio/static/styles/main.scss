@@ -50,7 +50,10 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     p {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
+        @media (min-width: $--WIDTH-tablet) {
+            font-size: 2.4rem;
+        }
         font-weight: 300;
     }
 }
@@ -66,8 +69,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .side-nav {
     position: fixed;
-    left: 2rem;
     bottom: 4rem;
+    left: 1.2rem;
+
+    @media (min-width: $--WIDTH-tablet) {
+        left: 2rem;
+    }
 }
 
 .dot {
@@ -105,20 +112,6 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-.crypto-prices {
-  position: absolute;
-  font-size: 0.9rem;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 1;
-  font-family: "FiraMono";
-}
-
-.btc { color: #E38215; }
-.bch { color: #7AFA5A; }
-.eth { color: #7A91B3; }
-.xmr { color: #FF6600; }
-
 .navbar {
     padding: 0rem 1rem;
     @media (min-width: $--WIDTH-tablet) {
@@ -138,7 +131,10 @@ h1, h2, h3, h4, h5, h6, p {
         li a {
             color: #F8F8F8;
             text-decoration: none;
-            padding: 0rem 1rem;
+            padding: 0rem 0.6rem;
+            @media (min-width: $--WIDTH-tablet) {
+                padding: 0rem 1rem;
+            }
         }
 
         li a:hover {
