@@ -1,8 +1,27 @@
+@import "partials/colors";
+
+$--WIDTH-mobile: 640px; // Or less
+$--WIDTH-tablet: 641px; // 641 - 1007
+$--WIDTH-desktop: 1008px; // Or greater
+
 html, body {
-    color: #F8F8F8;
-    background-color: #000000;
+    color: $--COLOR-text;
+    background-color: $--COLOR-bg;
 
     margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -10,16 +29,18 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
-.color-alt { color: #52F058; }
+.pop { color: $--COLOR-pop; }
 
 .splash-section {
     height: 100vh;
     font-family: "WorkSans";
 
-    scroll-behavior: smooth;
-
     h1 {
-        font-size: 7rem;
+        font-size: 22vw;
+        @media (min-width: $--WIDTH-tablet) {
+            font-size: 7rem;
+        }
+
         font-weight: 700;
     }
 
@@ -30,7 +51,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .splash-text {
-    padding: 8rem;
+    padding: 6rem 2.5rem;
+    @media (min-width: $--WIDTH-tablet) {
+        padding: 8rem;
+    }
 }
 
 .splash {}
@@ -49,15 +73,27 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mark-tag {
     position: absolute;
-    right: 2rem;
+    right: 0rem;
     bottom: 0;
+    width: 50vw;
+
+    @media (min-width: $--WIDTH-tablet) {
+        right: 2rem;
+        width: auto;
+    }
 }
 
 .skills-section {
     background-color: #52F058;
     font-family: "WorkSans";
-    font-size: 2rem;
-    padding: 8rem;
+    font-size: 1.5rem;
+    @media (min-width: $--WIDTH-tablet) {
+        font-size: 2rem;
+    }
+    padding: 2rem;
+    @media (min-width: $--WIDTH-tablet) {
+        padding: 8rem;
+    }
 }
 
 .crypto-prices {
@@ -75,7 +111,10 @@ h1, h2, h3, h4, h5, h6, p {
 .xmr { color: #FF6600; }
 
 .navbar {
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
+    @media (min-width: $--WIDTH-tablet) {
+        padding: 0rem 2rem;
+    }
     float: right;
 
     ul {

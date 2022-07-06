@@ -2,6 +2,17 @@ html, body {
   color: #F8F8F8;
   background-color: #000000;
   margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -9,18 +20,22 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-.color-alt {
+.pop {
   color: #52F058;
 }
 
 .splash-section {
   height: 100vh;
   font-family: "WorkSans";
-  scroll-behavior: smooth;
 }
 .splash-section h1 {
-  font-size: 7rem;
+  font-size: 22vw;
   font-weight: 700;
+}
+@media (min-width: 641px) {
+  .splash-section h1 {
+    font-size: 7rem;
+  }
 }
 .splash-section p {
   font-size: 2.4rem;
@@ -28,7 +43,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .splash-text {
-  padding: 8rem;
+  padding: 6rem 2.5rem;
+}
+@media (min-width: 641px) {
+  .splash-text {
+    padding: 8rem;
+  }
 }
 
 .side-nav {
@@ -45,15 +65,32 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mark-tag {
   position: absolute;
-  right: 2rem;
+  right: 0rem;
   bottom: 0;
+  width: 50vw;
+}
+@media (min-width: 641px) {
+  .mark-tag {
+    right: 2rem;
+    width: auto;
+  }
 }
 
 .skills-section {
   background-color: #52F058;
   font-family: "WorkSans";
-  font-size: 2rem;
-  padding: 8rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+@media (min-width: 641px) {
+  .skills-section {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 641px) {
+  .skills-section {
+    padding: 8rem;
+  }
 }
 
 .crypto-prices {
@@ -82,8 +119,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar {
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
   float: right;
+}
+@media (min-width: 641px) {
+  .navbar {
+    padding: 0rem 2rem;
+  }
 }
 .navbar ul {
   list-style-type: none;
