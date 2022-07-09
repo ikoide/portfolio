@@ -14,11 +14,22 @@
   </head>
   <body>
     <div class="navbar">
-      <ul>
-        <li><a href="#">Portfolio</a>
-        <li><a href="#">Contact</a>
-        <li><a href="#">Blog</a>
-      </ul>
+      <div class="nav-sec">
+        <a href="{{ url_for('main.home') }}">
+          <span class="nav-title">IAN KOIDE</span>
+        </a>
+      </div>
+      <div class="nav-sec">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#">WHOAMI</a>
+          <li class="nav-item"><a href="#">WORK</a>
+          <li class="nav-item"><a href="#">BLOG</a>
+        </ul>
+      </div>
+      <div class="nav-sec">
+        <button class="contact-me-btn">→</button>
+        <span class="contact-me-text">Let's chat</span>
+      </div>
     </div>
     <div class="splash-section">
       <div class="splash-text">

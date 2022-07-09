@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+a { color: $--COLOR-text; text-decoration: none; }
+
 .pop { color: $--COLOR-pop; }
 .alt { color: $--COLOR-alt; }
 
@@ -112,36 +114,80 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+$--HEIGHT-nav: 3.4rem;
+
 .navbar {
-    padding: 0rem 1rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+
     @media (min-width: $--WIDTH-tablet) {
         padding: 0rem 2rem;
     }
-    float: right;
 
-    ul {
+    .nav-links {
+        margin: 0;
         list-style-type: none;
-        padding: 0;
+        line-height: $--HEIGHT-nav;
+        height: $--HEIGHT-nav;
+        text-align: center;
 
-        li {
+        .nav-item {
             font-family: "WorkSans";
-            float: left;
+            display: inline;
+            padding: 0rem 0.6rem;
         }
 
-        li a {
+        .nav-item a {
             color: #F8F8F8;
             text-decoration: none;
-            padding: 0rem 0.6rem;
             @media (min-width: $--WIDTH-tablet) {
                 padding: 0rem 1rem;
             }
         }
 
-        li a:hover {
+        .nav-item a:hover {
             color: #52F058;
             transition-duration: 100ms;
         }
     }
+
+    border-bottom: 1px solid #444444;
+}
+
+.nav-sec {
+    display: inline-block;
+    height: $--HEIGHT-nav;
+    padding: 0rem 1rem;
+    line-height: $--HEIGHT-nav;
+
+    &.right { float: right; }
+}
+
+.nav-title {
+    font-family: "WorkSans";
+    font-weight: bold;
+}
+
+.contact-me-text {
+    font-family: "WorkSans";
+    margin-left: 0.2rem;
+}
+
+.contact-me-btn {
+    border-radius: 50%;
+    background-color: $--COLOR-pop;
+    height: 2rem;
+    width: 2rem;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-family: "WorkSans";
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .whoami-section {
@@ -157,16 +203,17 @@ h1, h2, h3, h4, h5, h6, p {
     width: 90%;
     font-size: 0.96rem;
     padding: 1rem;
+    box-shadow: 5px 8px 0px rgba(0, 0, 0, 0.2);
     @media (min-width: $--WIDTH-tablet) {
         width: 55%;
         font-size: 1rem;
         padding: 2rem;
+        box-shadow: 20px 25px 0px rgba(0, 0, 0, 0.2);
     }
 
     margin-left: auto;
     margin-right: auto;
     display: block;
-    box-shadow: 20px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .whoami-header {
