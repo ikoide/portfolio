@@ -32,13 +32,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .pop { color: $--COLOR-pop; }
+.alt { color: $--COLOR-alt; }
 
 .splash-section {
-    min-height: -webkit-fill-available;
-    font-family: "WorkSans";
-
     min-height: 100vh;
     min-height: -webkit-fill-available;
+
+    font-family: "WorkSans";
 
     h1 {
         font-size: 22vw;
@@ -142,4 +142,45 @@ h1, h2, h3, h4, h5, h6, p {
             transition-duration: 100ms;
         }
     }
+}
+
+.whoami-section {
+    background-color: $--COLOR-pop;
+    padding: 4rem 0rem;
+}
+
+.whoami-terminal {
+    font-family: "FiraMono";
+    width: 55%;
+    background-color: $--COLOR-bg;
+    border: 2px solid $--COLOR-alt;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2rem;
+    box-shadow: 20px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.whoami-header {
+    margin-bottom: 0.5rem;
+}
+
+.whoami-content {
+    margin-left: 0.5rem;
+    padding: 0.5rem 0rem;
+}
+
+.whoami-footer {
+    padding-top: 2rem;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
