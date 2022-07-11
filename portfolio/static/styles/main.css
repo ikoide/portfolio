@@ -35,7 +35,7 @@ a {
 }
 
 .splash-section {
-  min-height: 100vh;
+  min-height: 94vh;
   min-height: -webkit-fill-available;
   font-family: "WorkSans";
 }
@@ -137,8 +137,8 @@ a {
 .navbar .nav-links {
   margin: 0;
   list-style-type: none;
-  line-height: 3.4rem;
-  height: 3.4rem;
+  line-height: 6vh;
+  height: 6vh;
   text-align: center;
 }
 .navbar .nav-links .nav-item {
@@ -162,9 +162,9 @@ a {
 
 .nav-sec {
   display: inline-block;
-  height: 3.4rem;
+  height: 6vh;
   padding: 0rem 1rem;
-  line-height: 3.4rem;
+  line-height: 6vh;
 }
 .nav-sec.right {
   float: right;
