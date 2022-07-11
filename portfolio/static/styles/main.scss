@@ -63,7 +63,7 @@ a { color: $--COLOR-text; text-decoration: none; }
 .splash-text {
     padding: 6rem 2.5rem;
     @media (min-width: $--WIDTH-tablet) {
-        padding: 8rem;
+        padding: 6rem 8rem;
     }
 }
 
@@ -237,4 +237,31 @@ $--HEIGHT-nav: 3.4rem;
   50% {
     opacity: 0;
   }
+}
+
+.price-widgets {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0rem;
+
+    .widget {
+        border: 1px solid #FFFFFF;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        padding: 0.2rem 0.5rem;
+        margin-right: 0.5rem;
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        p {
+            font-family: "FiraMono";
+            font-size: 0.85rem;
+        }
+    }
 }

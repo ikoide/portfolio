@@ -39,6 +39,26 @@
           KOIDE<span class="pop">.</span>
         </h1>
         <p>Student &<br> Developer</p>
+        <div class="price-widgets">
+          <a href="https://www.getmonero.org/" target="_blank">
+            <div class="widget">
+              <img src="{{ url_for('static', filename='img/xmr.png') }}">
+              <p>${{ cryptoPrices["monero"]["usd"] }}</p>
+            </div>
+          </a>
+          <a href="https://bitcoin.org/en/" target="_blank">
+            <div class="widget">
+              <img src="{{ url_for('static', filename='img/btc.png') }}">
+              <p>${{ cryptoPrices["bitcoin"]["usd"] }}</p>
+            </div>
+          </a>
+          <a href="https://hypixel-skyblock.fandom.com/wiki/Bazaar" target="_blank">
+          <div class="widget">
+            <img src="{{ url_for('static', filename='img/STOCK_OF_STONKS.webp') }}">
+            <p>{{ stockOfStonksPrice }}</p>
+          </div>
+          </a>
+        </div>
       </div>
       <div class="side-nav">
         <img class="dot active" src="{{ url_for('static', filename='img/dot_active.png') }}">
