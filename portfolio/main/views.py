@@ -1,17 +1,21 @@
 import requests
 
-from flask import Blueprint, render_template, url_for, flash, redirect, request, abort, Markup, send_from_directory
-from portfolio.main.forms import AdminForm, PostForm
-from portfolio.main.models import Post
+from flask import (
+    Blueprint, render_template, url_for, flash,
+    redirect, request, abort, Markup,
+    send_from_directory
+)
+
+from portfolio.main.models import Prices
 
 main = Blueprint("main", __name__)
 
 @main.route("/")
+@main.route("/home")
 def home():
-    cryptoPrices = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,monero&vs_currencies=usd")
-    stockOfStonksPrice = round(requests.get("https://api.hypixel.net/skyblock/bazaar").json()["products"]["STOCK_OF_STONKS"]["quick_status"]["sellPrice"], 2)
-    print(stockOfStonksPrice)
-    return render_template("index.html", cryptoPrices=cryptoPrices.json(), stockOfStonksPrice=stockOfStonksPrice, title='Portfolio')
+    prices = Prices.objects().first()
+
+    return render_template("index.html", prices=prices, title='Portfolio')
 
 @main.route("/blog")
 def blog():

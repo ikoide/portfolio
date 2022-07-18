@@ -21,7 +21,7 @@
       </div>
       <div class="nav-sec">
         <ul class="nav-links">
-          <li class="nav-item"><a href="#">WHOAMI</a>
+          <li class="nav-item"><a href="#whoami">WHOAMI</a>
           <li class="nav-item"><a href="#">WORK</a>
           <li class="nav-item"><a href="#">BLOG</a>
         </ul>
@@ -43,19 +43,19 @@
           <a href="https://www.getmonero.org/" target="_blank">
             <div class="widget">
               <img src="{{ url_for('static', filename='img/xmr.png') }}">
-              <p>${{ cryptoPrices["monero"]["usd"] }}</p>
+              <p>${{ prices.monero_price }}</p>
             </div>
           </a>
           <a href="https://bitcoin.org/en/" target="_blank">
             <div class="widget">
               <img src="{{ url_for('static', filename='img/btc.png') }}">
-              <p>${{ cryptoPrices["bitcoin"]["usd"] }}</p>
+              <p>${{ prices.bitcoin_price }}</p>
             </div>
           </a>
           <a href="https://hypixel-skyblock.fandom.com/wiki/Bazaar" target="_blank">
           <div class="widget">
             <img src="{{ url_for('static', filename='img/STOCK_OF_STONKS.webp') }}">
-            <p>{{ stockOfStonksPrice }}</p>
+              <p>${{ prices.stock_of_stonks_price }}</p>
           </div>
           </a>
         </div>
@@ -67,13 +67,15 @@
       </div>
       <img class="mark-tag" src="{{ url_for('static', filename='img/mark.png') }}">
     </div>
-    <div class="whoami-section">
+    <div class="whoami-section" id="whoami">
       <div class="whoami-terminal">
         <p class="whoami-header"><span class="pop">sewer@fail</span> <span class="alt">~</span> » whoami</p>
         <p class="whoami-content">I’m Ian Koide / sewer</p>
         <p class="whoami-content">Passionate about <span class="pop">digital privacy</span>. I enjoy working with and building technology that enables internet users to remain safe while promoting a fair and equitable environment for all.</p>
         <p class="whoami-footer"><span class="pop">sewer@fail</span> <span class="alt">~</span> » <span class="blink_me">|</span></p>
       </div>
+    </div>
+    <div class="footer">
     </div>
   </body>
 </html>

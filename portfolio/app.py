@@ -4,7 +4,8 @@ from flask import Flask
 
 from portfolio.extensions import (
   db,
-  bcrypt
+  bcrypt,
+  scheduler
 )
 
 def create_app(config_filename="flask.cfg"):
@@ -24,7 +25,22 @@ def initialize_extensions(app):
   db.init_app(app)
   bcrypt.init_app(app)
 
+  return None
+
 def register_blueprints(app):
   from portfolio.main.views import main
 
   app.register_blueprint(main)
+
+  return None
+
+def register_scheduler(app):
+  """Registering Flask scheduler tasks."""
+  from portfolio.tasks import updatePrices
+
+  ## Stops flask_apscheduler from running twice
+  if not app.debug or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+    scheduler.init_app(app)
+    scheduler.start()
+
+  return None

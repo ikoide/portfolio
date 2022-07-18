@@ -1,5 +1,7 @@
-from flask_sqlalchemy import SQLAlchemy
+from flask_mongoengine import MongoEngine
 from flask_bcrypt import Bcrypt
+from flask_apscheduler import APScheduler
 
-db = SQLAlchemy()
+db = MongoEngine()
 bcrypt = Bcrypt()
+scheduler = APScheduler()
