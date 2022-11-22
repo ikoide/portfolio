@@ -38,7 +38,19 @@ a { color: $--COLOR-text; text-decoration: none; }
 .pop { color: $--COLOR-pop; }
 .alt { color: $--COLOR-alt; }
 
+#period {
+    display: none;
+    @media (min-width: $--WIDTH-tablet) {
+        display: inline;
+    }
+}
+
 .splash-section {
+    text-align: center;
+    @media (min-width: $--WIDTH-tablet) {
+        text-align: left;
+    }
+
     min-height: (100vh - $--HEIGHT-nav);
     min-height: -webkit-fill-available;
 
@@ -63,7 +75,7 @@ a { color: $--COLOR-text; text-decoration: none; }
 }
 
 .splash-text {
-    padding: 6rem 2.5rem;
+    padding: 4rem 2.5rem;
     @media (min-width: $--WIDTH-tablet) {
         padding: 6rem 8rem;
     }
@@ -242,8 +254,13 @@ a { color: $--COLOR-text; text-decoration: none; }
 
 .price-widgets {
     display: flex;
-    justify-content: flex-start;
-    padding: 1rem 0rem;
+    width: 100%;
+
+    padding: 2rem 0rem;
+    justify-content: center;
+    @media (min-width: $--WIDTH-tablet) {
+        justify-content: flex-start;
+    }
 
     .widget {
         border: 1px solid #FFFFFF;

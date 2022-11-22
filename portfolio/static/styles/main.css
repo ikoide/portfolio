@@ -34,10 +34,25 @@ a {
   color: #61AFEF;
 }
 
+#period {
+  display: none;
+}
+@media (min-width: 641px) {
+  #period {
+    display: inline;
+  }
+}
+
 .splash-section {
+  text-align: center;
   min-height: 94vh;
   min-height: -webkit-fill-available;
   font-family: "WorkSans";
+}
+@media (min-width: 641px) {
+  .splash-section {
+    text-align: left;
+  }
 }
 .splash-section h1 {
   font-size: 22vw;
@@ -59,7 +74,7 @@ a {
 }
 
 .splash-text {
-  padding: 6rem 2.5rem;
+  padding: 4rem 2.5rem;
 }
 @media (min-width: 641px) {
   .splash-text {
@@ -242,8 +257,14 @@ a {
 }
 .price-widgets {
   display: flex;
-  justify-content: flex-start;
-  padding: 1rem 0rem;
+  width: 100%;
+  padding: 2rem 0rem;
+  justify-content: center;
+}
+@media (min-width: 641px) {
+  .price-widgets {
+    justify-content: flex-start;
+  }
 }
 .price-widgets .widget {
   border: 1px solid #FFFFFF;
