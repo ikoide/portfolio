@@ -75,7 +75,7 @@ a { color: $--COLOR-text; text-decoration: none; }
 }
 
 .splash-text {
-    padding: 4rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     @media (min-width: $--WIDTH-tablet) {
         padding: 6rem 8rem;
     }
@@ -194,13 +194,19 @@ a { color: $--COLOR-text; text-decoration: none; }
 .contact-me-btn {
     border-radius: 50%;
     background-color: $--COLOR-pop;
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 0.8rem;
+    @media (min-width: $--WIDTH-tablet) {
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.2rem;
+    }
+
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     font-family: "WorkSans";
     font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .whoami-section {
