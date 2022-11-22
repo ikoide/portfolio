@@ -1,0 +1,288 @@
+html, body {
+  color: #F8F8F8;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: -webkit-fill-available;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.pop {
+  color: #52F058;
+}
+
+.alt {
+  color: #61AFEF;
+}
+
+#period {
+  display: none;
+}
+@media (min-width: 641px) {
+  #period {
+    display: inline;
+  }
+}
+
+.splash-section {
+  text-align: center;
+  min-height: 94vh;
+  min-height: -webkit-fill-available;
+  font-family: "WorkSans";
+}
+@media (min-width: 641px) {
+  .splash-section {
+    text-align: left;
+  }
+}
+.splash-section h1 {
+  font-size: 22vw;
+  font-weight: 700;
+}
+@media (min-width: 641px) {
+  .splash-section h1 {
+    font-size: 7rem;
+  }
+}
+.splash-section p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+@media (min-width: 641px) {
+  .splash-section p {
+    font-size: 2.4rem;
+  }
+}
+
+.splash-text {
+  padding: 4rem 2.5rem;
+}
+@media (min-width: 641px) {
+  .splash-text {
+    padding: 6rem 8rem;
+  }
+}
+
+.side-nav {
+  position: fixed;
+  bottom: 4rem;
+  left: 1.2rem;
+}
+@media (min-width: 641px) {
+  .side-nav {
+    left: 2rem;
+  }
+}
+
+.dot {
+  display: block;
+  width: 0.8rem;
+  margin: 0.3rem 0rem;
+}
+@media (min-width: 641px) {
+  .dot {
+    width: 1.2rem;
+    margin: 0.45rem 0rem;
+  }
+}
+
+.mark-tag {
+  position: absolute;
+  right: 0rem;
+  bottom: 0;
+  width: 50vw;
+}
+@media (min-width: 641px) {
+  .mark-tag {
+    right: 2rem;
+    width: auto;
+  }
+}
+
+.skills-section {
+  background-color: #52F058;
+  font-family: "WorkSans";
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+@media (min-width: 641px) {
+  .skills-section {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 641px) {
+  .skills-section {
+    padding: 8rem;
+  }
+}
+
+.navbar {
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444444;
+}
+@media (min-width: 641px) {
+  .navbar {
+    padding: 0rem 2rem;
+  }
+}
+.navbar .nav-links {
+  margin: 0;
+  list-style-type: none;
+  line-height: 6vh;
+  height: 6vh;
+  text-align: center;
+}
+.navbar .nav-links .nav-item {
+  font-family: "WorkSans";
+  display: inline;
+  padding: 0rem 0.6rem;
+}
+.navbar .nav-links .nav-item a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+@media (min-width: 641px) {
+  .navbar .nav-links .nav-item a {
+    padding: 0rem 1rem;
+  }
+}
+.navbar .nav-links .nav-item a:hover {
+  color: #52F058;
+  transition-duration: 100ms;
+}
+
+.nav-sec {
+  display: inline-block;
+  height: 6vh;
+  padding: 0rem 1rem;
+  line-height: 6vh;
+}
+.nav-sec.right {
+  float: right;
+}
+
+.nav-title {
+  font-family: "WorkSans";
+  font-weight: bold;
+}
+
+.contact-me-text {
+  font-family: "WorkSans";
+  margin-left: 0.2rem;
+}
+
+.contact-me-btn {
+  border-radius: 50%;
+  background-color: #52F058;
+  height: 2rem;
+  width: 2rem;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  font-family: "WorkSans";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.whoami-section {
+  background-color: #52F058;
+  padding: 4rem 0rem;
+}
+
+.whoami-terminal {
+  font-family: "FiraMono";
+  background-color: #000000;
+  border: 2px solid #61AFEF;
+  width: 90%;
+  font-size: 0.96rem;
+  padding: 1rem;
+  box-shadow: 5px 8px 0px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media (min-width: 641px) {
+  .whoami-terminal {
+    width: 55%;
+    font-size: 1rem;
+    padding: 2rem;
+    box-shadow: 20px 25px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.whoami-header {
+  margin-bottom: 0.5rem;
+}
+
+.whoami-content {
+  margin-left: 0.5rem;
+  padding: 0.5rem 0rem;
+}
+
+.whoami-footer {
+  padding-top: 2rem;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.price-widgets {
+  display: flex;
+  width: 100%;
+  padding: 2rem 0rem;
+  justify-content: center;
+}
+@media (min-width: 641px) {
+  .price-widgets {
+    justify-content: flex-start;
+  }
+}
+.price-widgets .widget {
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+}
+.price-widgets .widget img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+.price-widgets .widget p {
+  font-family: "FiraMono";
+  font-size: 0.85rem;
+}
+
+/*# sourceMappingURL=main.css.map */

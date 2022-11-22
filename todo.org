@@ -1,0 +1,19 @@
+#+TITLE: Todo
+
+* TODO TODO
+- [X] Add crypto prices modules to splash page
+- [ ] Add /pgp for PGP key
+- [X] Fix Lizard Zuck
+  - Make him stay on the bottom of the top 100vh page
+- [ ] Blog section
+- [ ] Work section
+- [ ] Contact section
+- [-] Navbar links
+  - [X] WHOAMI
+  - [ ] Work
+  - [ ] Blog
+  - [ ] Let's chat (contact)
+- [ ] Make mobile friendly
+- [ ] Design work section
+- [ ] Write footer
+- [ ] Make sidenav actually function

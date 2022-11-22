@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ian Koide's Developer Portfolio.">
+    <meta name="keywords" content="portfolio,web,developer,html,css,python,javascript,js,ian koide,koide">
+    <meta name="author" content="Ian Koide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/fonts.css') }}">
+
+    <title>Ian Koide | {{ title }}</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-sec">
+        <a href="{{ url_for('main.home') }}">
+          <span class="nav-title">IAN KOIDE</span>
+        </a>
+      </div>
+      <div class="nav-sec" id="period">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#whoami">WHOAMI</a>
+          <li class="nav-item"><a href="#">WORK</a>
+          <li class="nav-item"><a href="#">BLOG</a>
+        </ul>
+      </div>
+      <div class="nav-sec">
+        <button class="contact-me-btn">→</button>
+        <span class="contact-me-text">Let's chat</span>
+      </div>
+    </div>
+    <div class="splash-section">
+      <div class="splash-text">
+        <h1>
+          I<span class="pop">'</span>M<br>
+          IAN<br>
+          KOIDE<span class="pop" id="period">.</span>
+        </h1>
+        <p>Student <span id="period">&</span><br> Developer</p>
+        <div class="price-widgets">
+          <a href="https://www.getmonero.org/" target="_blank">
+            <div class="widget">
+              <img src="{{ url_for('static', filename='img/xmr.png') }}">
+              <p>${{ prices.monero_price }}</p>
+            </div>
+          </a>
+          <a href="https://bitcoin.org/en/" target="_blank">
+            <div class="widget">
+              <img src="{{ url_for('static', filename='img/btc.png') }}">
+              <p>${{ prices.bitcoin_price }}</p>
+            </div>
+          </a>
+          <a href="https://hypixel-skyblock.fandom.com/wiki/Bazaar" target="_blank">
+          <div class="widget">
+            <img src="{{ url_for('static', filename='img/STOCK_OF_STONKS.webp') }}">
+              <p>${{ prices.stock_of_stonks_price }}</p>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="side-nav">
+        <img class="dot active" src="{{ url_for('static', filename='img/dot_active.png') }}">
+        <img class="dot" src="{{ url_for('static', filename='img/dot.png') }}">
+        <img class="dot" src="{{ url_for('static', filename='img/dot.png') }}">
+      </div>
+      <img class="mark-tag" src="{{ url_for('static', filename='img/mark.png') }}">
+    </div>
+    <div class="whoami-section" id="whoami">
+      <div class="whoami-terminal">
+        <p class="whoami-header"><span class="pop">sewer@fail</span> <span class="alt">~</span> » whoami</p>
+        <p class="whoami-content">I’m Ian Koide/ sewer</p>
+        <p class="whoami-content">Passionate about <span class="pop">digital privacy</span>. I enjoy working with and building technology that enables internet users to remain safe while promoting a fair and equitable environment for all.</p>
+        <p class="whoami-footer"><span class="pop">sewer@fail</span> <span class="alt">~</span> » <span class="blink_me">|</span></p>
+      </div>
+    </div>
+    <div class="footer">
+    </div>
+  </body>
+</html>

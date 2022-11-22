@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form method="POST" action="">
+    {{ postForm.hidden_tag() }}
+    <div class="form-group">
+        {{ postForm.title(class="form-control title-form", placeholder="Title") }}
+    </div>
+    <ul class="post-nav" onclick="addFormat(event)">
+        <li><a id="bold"><i class="fas fa-bold"><span style="display: none;">&#60;b&#62;&#60;/b&#62;</span></i></a></li>
+        <li><a id="bold"><i class="fas fa-italic"><span style="display: none;">&#60;i&#62;&#60;/i&#62;</span></i></a></li>
+        <li><a id="bold"><i class="fas fa-link"><span style="display: none;">&#60;a href="" target="_blank"&#62;&#60;/a&#62;</span></i></a></li>
+        <li><a id="bold"><i class="fas fa-strikethrough"><span style="display: none;">&#60;s&#62;&#60;/s&#62;</span></i></a></li>
+        <li><a id="bold"><i class="fas fa-code"><span style="display: none;">&#60;div class="code"&#62;&#13;&#13;&#60;/div&#62;</span></i></a></li>
+        <li><a id="bold"><i class="fas fa-image"><span style="display: none;">&#60;img src="" /&#62;</span></i></a></li>
+      </ul> 
+    <div class="form-group">
+        {{ postForm.content(class="form-control content-form", id="content", style="height: 20rem") }}
+    </div>
+    <div class="form-group">
+        {{ postForm.submit(class="btn btn-primary") }}
+    </div>
+</form>
+<script>
+    function addFormat(event) {
+        var targ = event.target || event.srcElement;
+        document.getElementById("content").value += targ.textContent || targ.innerText;
+    }
+</script>
+{% endblock %}

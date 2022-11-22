@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ian Koide's Developer Portfolio.">
+    <meta name="keywords" content="Portfolio, Web Developer, Ian Koide, Koide, Full-Stack Developer, Front-end Developer, Website Developer">
+    <meta name="author" content="Ian Koide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab|Open+Sans:300|Work+Sans:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/bootstrap.min.css') }}">
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" text="text/css" href="{{ url_for('static', filename='styles/fonts.css') }}">
+      
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    
+    <script src="https://kit.fontawesome.com/010964ebfa.js" crossorigin="anonymous"></script>
+
+    <title>Ian Koide | {{ title }}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('blog') }}">Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrapper">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }} alert-dismissible fade show">
+              {{ message }}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+      <p>© 2020 <span style="color: #FF6C02;">IAN KOIDE</span> . MADE IN AMERICA</p>
+      <a href="https://github.com/ikoide" target="_blank"><button class="social-btn"><i class="fab fa-github social-icon"></i>Follow me on Github</button></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+    
+            var hash = this.hash;
+    
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script> 
+  </body>
+</html>
